@@ -1,0 +1,201 @@
+.bg-darkgreen{
+  background-color:#004B35;
+}
+.text-darkgreen{
+  color:#004B35;
+}
+.btn-outline-darkgreen {
+    color: #004B35;
+    border-color: #004B35;
+}
+
+.btn-outline-darkgreen:hover {
+    color: #fff;
+    background-color: #004B35;
+    border-color: #004B35;
+}
+
+.btn-outline-darkgreen:focus,
+.btn-outline-darkgreen:active {
+    color: #fff;
+    background-color: #004B35;
+    border-color: #004B35;
+}
+.w-40{
+  width:40% !important;
+}
+section, [id] {
+  scroll-margin-top: 80px; /* 導覽列高度 + 一些額外空間 */
+}
+    /* 地圖容器 */
+    .map-container {
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 10px;
+  }
+
+  /* 地圖圖片 */
+  .map-container img {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s ease;
+  }
+
+  /* 覆蓋層 */
+  .map-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0);
+      transition: background-color 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  /* 放大按鈕 */
+  .zoom-button {
+      background-color: #004B35;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 5px 15px rgba(0, 75, 53, 0.3);
+  }
+
+  /* 懸停效果 */
+  .map-container:hover .map-overlay {
+      background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .map-container:hover .zoom-button {
+      opacity: 1;
+      transform: scale(1);
+  }
+
+  .map-container:hover img {
+      transform: scale(1.05);
+  }
+  .icon-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #004B35;  /* 深綠色背景 */
+    border-radius: 50%;          /* 變成圓形 */
+    display: flex;               /* 使用 flexbox */
+    align-items: center;         /* 垂直置中 */
+    justify-content: center;     /* 水平置中 */
+    margin: 0 auto 15px;         /* 自動置中並加底部間距 */
+}
+.icon-circle-light{
+  background-color: #E2E7E5;
+  width:60px;
+  height:60px;
+}
+
+/* 為每個卡片容器添加連接線 */
+.step-card-wrapper {
+  position: relative;
+}
+
+/* 為前兩個卡片添加右側連接線 */
+.step-card-wrapper:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  background-color: #89A098;  /* 金色連接線 */
+  top: 50px;                  /* 與圓形圖標中心對齊 */
+  right: -18px;               /* 連接到下一個卡片 */
+  z-index: 1;
+}
+
+/* 手機版隱藏連接線 */
+@media (max-width: 991px) {
+  .step-card-wrapper::after {
+      display: none;
+  }
+}
+.btn-hover:hover{
+  border-width: 2px;
+  border-color: #e29d12;  
+}
+.btn-green-hover:hover{
+  background-color:#F8F9F6 !important;
+  color:green !important;
+}
+
+/* 卡片懸停效果 */
+.card-hover-effect {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-10px);        /* 向上浮起 10px */
+  border-color: #e29d12;               /* 邊框顏色改變 */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);  /* 增加陰影效果 */
+}
+
+/* 卡片內容微微放大 */
+.card-hover-effect:hover > * {
+  transform: scale(1.02);              /* 內容放大 2% */
+  transition: transform 0.3s ease;
+}
+.accordion-item {
+    border: none !important;
+    border-radius: 1rem !important;
+    overflow: hidden;
+}
+
+.accordion-button {
+    border-radius: 1rem !important;
+}
+
+.accordion-button:not(.collapsed) {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.accordion-button.collapsed {
+    border-radius: 1rem !important;
+}
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #D4A017;
+}
+.custom-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1055;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.custom-close-btn span {
+  color: #198754; /* Bootstrap 綠色 */
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+}
