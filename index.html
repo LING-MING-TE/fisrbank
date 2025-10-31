@@ -46,30 +46,30 @@
 <div class="container py-5">
   <div class="text-center mb-5">
       <!-- 職缺標題 -->
-      <h2 class="text-green fw-bold mb-2">最新職缺</h2>
+      <h2 class="text-green fw-bold mb-2" id="job">最新職缺</h2>
       <p style="color:#789297">立即投遞，加入第一</p>
   </div>
 
   <!-- 職缺卡片 -->
   <div class="row justify-content-center">
       <!-- 卡片1 - 儲備核心人才MA｜一般組 -->
-      <div class="col-lg-5 mb-4">
+      <div class="col-lg-5 col-10 mb-4">
           <div class="card border-0 shadow-sm">
               <div class="card-body">
                 <h5 class="card-title text-green fw-bold" style="font-size:1.15rem">儲備核心人才MA｜一般組</h5>
-                <badge class="text-green small p-1 rounded-pill" style="background-color:#F7F0DE">一般組MA</badge>
+                <badge class="text-green p-2 rounded-pill fw-bold" style="background-color:#F7F0DE;font-size:0.75rem">一般組MA</badge>
                 <div class="d-flex align-items-center mt-3">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-2 danger lucide lucide-map-pin h-4 w-4 text-primary"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
                   <p class="card-text small mb-0">台北地區</p>
                 </div>
                 <div class="d-flex align-items-center mt-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign h-4 w-4 text-primary"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                  <p class="card-text small mb-0 ms-2">7等9級高級辦事員(月支待遇約56,509元)</p>
+                  <p class="card-text small mb-0 ms-2 fw-bold text-green">7等9級高級辦事員(月支待遇約56,509元)</p>
                 </div>
                 <ul class="mt-3">
-                  <li class="mt-2 small">外派機會遍佈亞、美、歐洲據點</li>
-                  <li class="mt-2 small">首年特別考核，快速調薪機會</li>
-                  <li class="mt-2 small">完整培訓資源，海外輪調經歷</li>
+                  <li class="mt-3 small">外派機會遍佈亞、美、歐洲據點</li>
+                  <li class="mt-3 small">首年特別考核，快速調薪機會</li>
+                  <li class="mt-3 small">完整培訓資源，海外輪調經歷</li>
                 </ul>
                 <button class="btn btn-success w-100 rounded-pill mt-4 py-2 btn-hover" data-bs-toggle="offcanvas" data-bs-target="#morejobcard1" aria-controls="#morejobcard1">看更多<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ml-2 h-4 w-4 inline"><path d="m6 9 6 6 6-6"></path></svg></button>
               </div>
@@ -77,23 +77,23 @@
       </div>
       
       <!-- 卡片2 - 儲備核心人才MA｜數位資訊組 -->
-      <div class="col-lg-5 mb-4">
+      <div class="col-lg-5 col-10 mb-4">
           <div class="card border-0 shadow-sm">
               <div class="card-body">
                 <h5 class="card-title text-green fw-bold" style="font-size:1.15rem">儲備核心人才MA｜數位資訊組</h5>
-                <badge class="text-green small p-1 rounded-pill" style="background-color:#E8F5E9">數位資訊組MA</badge>
+                <badge class="text-green small p-2 fw-bold rounded-pill" style="background-color:#E8F5E9;font-size:0.75rem">數位資訊組MA</badge>
                 <div class="d-flex align-items-center mt-3">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-2 danger lucide lucide-map-pin h-4 w-4 text-primary"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
                   <p class="card-text small mb-0 ">台北地區</p>
                 </div>
                 <div class="d-flex align-items-center mt-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign h-4 w-4 text-primary"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                  <p class="card-text small mb-0 ms-2">7等9級高級辦事員(月支待遇約56,509元)</p>
+                  <p class="card-text small mb-0 ms-2 text-green fw-bold">7等9級高級辦事員(月支待遇約56,509元)</p>
                 </div>
                 <ul class="mt-3">
-                  <li class="mt-2 small">參與數位轉型專案，實戰經驗豐富</li>
-                  <li class="mt-2 small">部門跨合作，拓展視野與人脈</li>
-                  <li class="mt-2 small">數位金融發展，職涯前景佳</li>
+                  <li class="mt-3 small">參與數位轉型專案，實戰經驗豐富</li>
+                  <li class="mt-3 small">部門跨合作，拓展視野與人脈</li>
+                  <li class="mt-3 small">數位金融發展，職涯前景佳</li>
                 </ul>
                 <button class="btn btn-success w-100 rounded-pill mt-4 py-2 btn-hover" data-bs-toggle="offcanvas" data-bs-target="#morejobcard2" aria-controls="#morejobcard2">看更多<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ml-2 h-4 w-4 inline"><path d="m6 9 6 6 6-6"></path></svg></button>
               </div>
@@ -101,7 +101,7 @@
       </div>
       
       <!-- 卡片3 - 業務菁英人才 -->
-      <div class="col-lg-5 mb-4">
+      <div class="col-lg-5 col-10 mb-4">
           <div class="card border-0 shadow-sm">
               <div class="card-body">
                 <h5 class="card-title text-green fw-bold" style="font-size:1.15rem">業務菁英人才</h5>
@@ -111,12 +111,12 @@
                 </div>
                 <div class="d-flex align-items-center mt-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign h-4 w-4 text-primary"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                  <p class="card-text small mb-0 ms-2">7等1級高級辦事員(月支待遇約51,805元起)</p>
+                  <p class="card-text small mb-0 ms-2 fw-bold text-green">7等1級高級辦事員(月支待遇約51,805元起)</p>
                 </div>
                 <ul class="mt-3">
-                  <li class="mt-2 small">快速晉升管道</li>
-                  <li class="mt-2 small">外派駐點輪調資源</li>
-                  <li class="mt-2 small">高挑戰高產出型角色</li>
+                  <li class="mt-3 small">快速晉升管道</li>
+                  <li class="mt-3 small">外派駐點輪調資源</li>
+                  <li class="mt-3 small">高挑戰高產出型角色</li>
                 </ul>
                 <button class="btn btn-success w-100 rounded-pill mt-4 py-2 btn-hover" data-bs-toggle="offcanvas" data-bs-target="#morejobcard3" aria-controls="#morejobcard3">看更多<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ml-2 h-4 w-4 inline"><path d="m6 9 6 6 6-6"></path></svg></button>
               </div>
@@ -124,7 +124,7 @@
       </div>
       
       <!-- 卡片4 - 一般行員（法律組） -->
-      <div class="col-lg-5 mb-4">
+      <div class="col-lg-5 col-10 mb-4">
           <div class="card border-0 shadow-sm">
               <div class="card-body">
                 <h5 class="card-title text-green fw-bold" style="font-size:1.15rem">一般行員（法律組）</h5>
@@ -134,12 +134,12 @@
                 </div>
                 <div class="d-flex align-items-center mt-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign h-4 w-4 text-primary"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                  <p class="card-text small mb-0 ms-2">6等7級中級辦事員(月支待遇約45,957元)</p>
+                  <p class="card-text small mb-0 ms-2 fw-bold text-green">6等7級中級辦事員(月支待遇約45,957元)</p>
                 </div>
                 <ul class="mt-3">
-                  <li class="mt-2 small">法律專業角色</li>
-                  <li class="mt-2 small">內外部法遵合作支援</li>
-                  <li class="mt-2 small">參與法務相關專案</li>
+                  <li class="mt-3 small">法律專業角色</li>
+                  <li class="mt-3 small">內外部法遵合作支援</li>
+                  <li class="mt-3 small">參與法務相關專案</li>
                 </ul>
                 <button class="btn btn-success w-100 rounded-pill mt-4 py-2 btn-hover" data-bs-toggle="offcanvas" data-bs-target="#morejobcard4" aria-controls="#morejobcard4">看更多<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ml-2 h-4 w-4 inline"><path d="m6 9 6 6 6-6"></path></svg></button>
               </div>
@@ -147,7 +147,7 @@
       </div>
       
       <!-- 卡片5 - 一般行員（一般組） -->
-      <div class="col-lg-5 mb-4">
+      <div class="col-lg-5 col-10 mb-4">
           <div class="card border-0 shadow-sm">
               <div class="card-body">
                 <h5 class="card-title text-green fw-bold" style="font-size:1.15rem">一般行員（一般組）</h5>
@@ -160,9 +160,9 @@
                   <p class="card-text small mb-0 ms-2">5等9級～6等7級(月支待遇約40,928～45,957元)</p>
                 </div>
                 <ul class="mt-3">
-                  <li class="mt-2 small">多區域分發(台北/桃園/新竹/台中/南部等)</li>
-                  <li class="mt-2 small">多軌晉升路徑</li>
-                  <li class="mt-2 small">具備分發到全台多個營運據點的彈性</li>
+                  <li class="mt-3 small">多區域分發(台北/桃園/新竹/台中/南部等)</li>
+                  <li class="mt-3 small">多軌晉升路徑</li>
+                  <li class="mt-3 small">具備分發到全台多個營運據點的彈性</li>
                 </ul>
                 <button class="btn btn-success w-100 rounded-pill mt-4 py-2 btn-hover" data-bs-toggle="offcanvas" data-bs-target="#morejobcard5" aria-controls="#morejobcard5">看更多<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ml-2 h-4 w-4 inline"><path d="m6 9 6 6 6-6"></path></svg></button>
               </div>
@@ -170,7 +170,7 @@
       </div>
       
       <!-- 卡片6 - 徵授信經驗行員 -->
-      <div class="col-lg-5 mb-4">
+      <div class="col-lg-5 col-10 mb-4">
           <div class="card border-0 shadow-sm">
               <div class="card-body">
                 <h5 class="card-title text-green fw-bold" style="font-size:1.15rem">徵授信經驗行員</h5>
@@ -180,12 +180,12 @@
                 </div>
                 <div class="d-flex align-items-center mt-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign h-4 w-4 text-primary"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                  <p class="card-text small mb-0 ms-2">7等6級高級辦事員(月支待遇約54,745元)</p>
+                  <p class="card-text small mb-0 ms-2 fw-bold text-green">7等6級高級辦事員(月支待遇約54,745元)</p>
                 </div>
                 <ul class="mt-3">
-                  <li class="mt-2 small">具徵授信審查經驗</li>
-                  <li class="mt-2 small">各區分行需求高</li>
-                  <li class="mt-2 small">專業職能發展</li>
+                  <li class="mt-3 small">具徵授信審查經驗</li>
+                  <li class="mt-3 small">各區分行需求高</li>
+                  <li class="mt-3 small">專業職能發展</li>
                 </ul>
                 <button class="btn btn-success w-100 rounded-pill mt-4 py-2 btn-hover" data-bs-toggle="offcanvas" data-bs-target="#morejobcard6" aria-controls="#morejobcard6">看更多<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ml-2 h-4 w-4 inline"><path d="m6 9 6 6 6-6"></path></svg></button>
               </div>
@@ -193,7 +193,7 @@
       </div>
       
       <!-- 卡片7 - 專案助理理財人員 -->
-      <div class="col-lg-5 mb-4">
+      <div class="col-lg-5 col-10 mb-4">
           <div class="card border-0 shadow-sm">
               <div class="card-body">
                 <h5 class="card-title text-green fw-bold" style="font-size:1.15rem">專案助理理財人員</h5>
@@ -203,12 +203,12 @@
                 </div>
                 <div class="d-flex align-items-center mt-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign h-4 w-4 text-primary"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                  <p class="card-text small mb-0 ms-2">6等11級中級辦事員(月支待遇約48,866元)</p>
+                  <p class="card-text small mb-0 ms-2 fw-bold text-green">6等11級中級辦事員(月支待遇約48,866元)</p>
                 </div>
                 <ul class="mt-3">
-                  <li class="mt-2 small">具備金融商品/投資/保險/理財等證照或銷售經驗</li>
-                  <li class="mt-2 small">理財顧問職涯發展</li>
-                  <li class="mt-2 small">業績導向獎勵制度</li>
+                  <li class="mt-3 small">具備金融商品/投資/保險/理財等證照或銷售經驗</li>
+                  <li class="mt-3 small">理財顧問職涯發展</li>
+                  <li class="mt-3 small">業績導向獎勵制度</li>
                 </ul>
                 <button class="btn btn-success w-100 rounded-pill mt-4 py-2 btn-hover" data-bs-toggle="offcanvas" data-bs-target="#morejobcard7" aria-controls="#morejobcard7">看更多<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ml-2 h-4 w-4 inline"><path d="m6 9 6 6 6-6"></path></svg></button>
               </div>
@@ -216,7 +216,7 @@
       </div>
       
       <!-- 卡片8 - 專案理財人員 -->
-      <div class="col-lg-5 mb-4">
+      <div class="col-lg-5 col-10 mb-4">
           <div class="card border-0 shadow-sm">
               <div class="card-body">
                 <h5 class="card-title text-green fw-bold" style="font-size:1.15rem">專案理財人員</h5>
@@ -226,12 +226,12 @@
                 </div>
                 <div class="d-flex align-items-center mt-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign h-4 w-4 text-primary"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                  <p class="card-text small mb-0 ms-2">7等5級高級辦事員(月支待遇約54,157元)</p>
+                  <p class="card-text small mb-0 ms-2 fw-bold text-green">7等5級高級辦事員(月支待遇約54,157元)</p>
                 </div>
                 <ul class="mt-3">
-                  <li class="mt-2 small">需有理財顧問經驗 2 年(含)以上</li>
-                  <li class="mt-2 small">完整證照與專業培訓</li>
-                  <li class="mt-2 small">高績效高回報</li>
+                  <li class="mt-3 small">需有理財顧問經驗 2 年(含)以上</li>
+                  <li class="mt-3 small">完整證照與專業培訓</li>
+                  <li class="mt-3 small">高績效高回報</li>
                 </ul>
                 <button class="btn btn-success w-100 rounded-pill mt-4 py-2 btn-hover" data-bs-toggle="offcanvas" data-bs-target="#morejobcard8" aria-controls="#morejobcard8">看更多<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ml-2 h-4 w-4 inline"><path d="m6 9 6 6 6-6"></path></svg></button>
                 
@@ -248,10 +248,12 @@
 
 
     <!-- 職缺offcanvas -->
+     <section>
+   <!-- 核心人才MA｜一般組 儲備 -->
     <div class="offcanvas offcanvas-end w-40" tabindex="-1" id="morejobcard1" aria-labelledby="morejobcardlabel1">
         <div class="offcanvas-header align-items-start" style="background-color: #004B35;">
-          <div>
-            <h5 id="morejobcardlabel1" class="text-white mb-2">儲備核心人才MA｜一般組</h5>
+          <div class="py-3 px-2">
+            <h5 id="morejobcardlabel1" class="text-white mb-2 h4 fw-bold">儲備核心人才MA｜一般組</h5>
             <span class="badge rounded-pill px-3 py-2" style="background-color:#3E6F5E">一般組MA</span>
           </div>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -342,11 +344,14 @@
           </a>
         </div>
     </div>
+
+
+    <!-- 儲備核心人才MA｜數位資訊組 -->
     <div class="offcanvas offcanvas-end w-40" tabindex="-1" id="morejobcard2" aria-labelledby="morejobcardlabel2">
         <div class="offcanvas-header align-items-start" style="background-color: #004B35;">
-          <div>
-            <h5 id="morejobcardlabel2" class="text-white mb-2">儲備核心人才MA｜數位資訊組</h5>
-            <span class="badge rounded-pill px-3 py-2" style="background-color:#3E6F5E">一般組MA</span>
+          <div class="py-3">
+            <h5 id="morejobcardlabel2" class="text-white mb-2 h3">儲備核心人才MA｜數位資訊組</h5>
+            <span class="badge rounded-pill px-3 py-2" style="background-color:#3E6F5E">數位資訊組MA</span>
           </div>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -369,7 +374,7 @@
             <div class="mb-4">
               <h6 class="fw-bold mb-2" style="color: #004B35;">學歷條件</h6>
               <p class="small lh-base" style="color: #1F2E2A;">
-                國內、外研究所（含）以上學歷（含應屆畢業生），科系不限；歡迎商管、管理、資訊理工、統計、法律或心理等相關科系優秀人才報名。
+                國內、外研究所（含）以上學歷（含應屆畢業生）；大學與研究所至少一項學歷為資訊相關科系。
               </p>
             </div>
     
@@ -379,23 +384,17 @@
                 具備一般社交及工作場合英語溝通能力，語言程度達下列任一標準：
               </p>
               <ul class="small lh-base" style="color: #1F2E2A;">
-                <li>TOEIC（多益）840分</li>
-                <li>TOEFL iBT（托福）80分 或 ITP 575分</li>
-                <li>IELTS（雅思）6.5分</li>
-                <li>FLPT 外語能力測驗（英、日、韓、法、德語、西班牙語任一項）筆試220分；口說S-2+</li>
+                <li>TOEIC（多益）800分</li>
+                <li>TOEFL iBT（托福）75分 或 ITP 560分</li>
+                <li>IELTS（雅思）6分</li>
+                <li>FLPT 外語能力測驗（英語）筆試200分；口說S-2</li>
                 <li>JLPT（日檢）1級或N1級</li>
-                <li>歐檢C1(含)以上</li>
-                <li>TestDaF TDN4(含)以上（聽/說/讀/寫四項成績皆達到4分以上）</li>
               </ul>
             </div>
     
             <div class="mb-4">
               <h6 class="fw-bold mb-2" style="color: #004B35;">加分條件</h6>
-              <ul class="small lh-base" style="color: #1F2E2A;">
-                <li>海外服務經驗（願意赴海外派任優先）</li>
-                <li>具國際反洗錢師認證（CAMS）佳</li>
-                <li>具金融或數位金融相關證照者優先</li>
-              </ul>
+                <p>具金融或數位金融相關證照者優先。</p>
             </div>
     
             <div class="mb-4">
@@ -409,7 +408,7 @@
               <h6 class="fw-bold mb-2" style="color: #004B35;">敘薪條件</h6>
               <p class="small lh-base" style="color: #1F2E2A;">
                 7等9級高級辦事員（月支待遇約56,509元）。<br>
-                本職缺進行第1年將進行特別考核，通過考核者將改敘8等2級初級專員 (月支待遇59,448元)。<br>
+                第1年後特別考核，通過考核者改敘8等2級初級專員 (月支待遇59,448元)。<br>
                 未通過者將予退出MA培訓計畫，並改敘7等1級高級辦事員 (月支待遇51,805元)。
               </p>
             </div>
@@ -436,11 +435,13 @@
           </a>
         </div>
     </div>
+
+
+    <!-- 業務菁英人才 -->
     <div class="offcanvas offcanvas-end w-40" tabindex="-1" id="morejobcard3" aria-labelledby="morejobcardlabel3">
         <div class="offcanvas-header align-items-start" style="background-color: #004B35;">
           <div class="py-3">
             <h5 id="morejobcardlabel3" class="text-white mb-2 h3">業務精英人才</h5>
-            <span class="badge rounded-pill px-3 py-2" style="background-color:#3E6F5E">一般組MA</span>
           </div>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -530,6 +531,9 @@
           </a>
         </div>
     </div>
+
+
+    <!-- 一般行員（法律組） -->
     <div class="offcanvas offcanvas-end w-40" tabindex="-1" id="morejobcard4" aria-labelledby="morejobcardlabel4">
         <div class="offcanvas-header align-items-start" style="background-color: #004B35;">
           <div class="py-3">
@@ -624,105 +628,240 @@
           </a>
         </div>
     </div>
+
+
+    <!-- 一般行員（一般組） -->
     <div class="offcanvas offcanvas-end w-40" tabindex="-1" id="morejobcard5" aria-labelledby="morejobcardlabel5">
-        <div class="offcanvas-header align-items-start" style="background-color: #004B35;">
-          <div class="py-3">
-            <h5 id="morejobcardlabel5" class="text-white mb-2">一般行員（一般組）</h5>
-            <span class="badge rounded-pill px-3 py-2 h3" style="background-color:#3E6F5E">一般組MA</span>
-          </div>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <div class="offcanvas-header align-items-start" style="background-color: #004B35;">
+        <div class="py-3">
+          <h5 id="morejobcardlabel5" class="text-white mb-2 h3">一般行員（一般組）</h5>
         </div>
-        
-        <div class="offcanvas-body">
-          <div class="p-3">
-            <!-- 工作資訊卡片 -->
-            <div class="bg-light rounded-3 p-3 mb-4">
-              <div class="d-flex align-items-center gap-2 mb-2 small">
-                <span class="fw-bold" style="color: #004B35;">📍 工作地點：</span>
-                <span style="color: #1F2E2A;">台北地區</span>
-              </div>
-              <div class="d-flex align-items-center gap-2 small">
-                <span class="fw-bold" style="color: #004B35;">💰 薪資待遇：</span>
-                <span style="color: #1F2E2A;">7等9級高級辦事員(月支待遇約56,509元)</span>
-              </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      
+      <div class="offcanvas-body">
+        <div class="p-3">
+          <!-- 工作資訊卡片 -->
+          <div class="bg-light rounded-3 p-3 mb-4">
+            <div class="d-flex align-items-center gap-2 mb-2 small">
+              <span class="fw-bold" style="color: #004B35;">📍 工作地點：</span>
+              <span style="color: #1F2E2A;">全台多區</span>
             </div>
-    
-            <!-- 詳細資訊 -->
-            <div class="mb-4">
-              <h6 class="fw-bold mb-2" style="color: #004B35;">學歷條件</h6>
-              <p class="small lh-base" style="color: #1F2E2A;">
-                國內、外研究所（含）以上學歷（含應屆畢業生），科系不限；歡迎商管、管理、資訊理工、統計、法律或心理等相關科系優秀人才報名。
-              </p>
-            </div>
-    
-            <div class="mb-4">
-              <h6 class="fw-bold mb-2" style="color: #004B35;">外語能力</h6>
-              <p class="small lh-base" style="color: #1F2E2A;">
-                具備一般社交及工作場合英語溝通能力，語言程度達下列任一標準：
-              </p>
-              <ul class="small lh-base" style="color: #1F2E2A;">
-                <li>TOEIC（多益）840分</li>
-                <li>TOEFL iBT（托福）80分 或 ITP 575分</li>
-                <li>IELTS（雅思）6.5分</li>
-                <li>FLPT 外語能力測驗（英、日、韓、法、德語、西班牙語任一項）筆試220分；口說S-2+</li>
-                <li>JLPT（日檢）1級或N1級</li>
-                <li>歐檢C1(含)以上</li>
-                <li>TestDaF TDN4(含)以上（聽/說/讀/寫四項成績皆達到4分以上）</li>
-              </ul>
-            </div>
-    
-            <div class="mb-4">
-              <h6 class="fw-bold mb-2" style="color: #004B35;">加分條件</h6>
-              <ul class="small lh-base" style="color: #1F2E2A;">
-                <li>海外服務經驗（願意赴海外派任優先）</li>
-                <li>具國際反洗錢師認證（CAMS）佳</li>
-                <li>具金融或數位金融相關證照者優先</li>
-              </ul>
-            </div>
-    
-            <div class="mb-4">
-              <h6 class="fw-bold mb-2" style="color: #004B35;">人格特質</h6>
-              <p class="small lh-base" style="color: #1F2E2A;">
-                具企圖心、抗壓性強、溝通協調佳、團隊合作佳，能適應快速輪調培訓。
-              </p>
-            </div>
-    
-            <div class="mb-4">
-              <h6 class="fw-bold mb-2" style="color: #004B35;">敘薪條件</h6>
-              <p class="small lh-base" style="color: #1F2E2A;">
-                7等9級高級辦事員（月支待遇約56,509元）。<br>
-                本職缺進行第1年將進行特別考核，通過考核者將改敘8等2級初級專員 (月支待遇59,448元)。<br>
-                未通過者將予退出MA培訓計畫，並改敘7等1級高級辦事員 (月支待遇51,805元)。
-              </p>
-            </div>
-    
-            <div class="mb-4">
-              <h6 class="fw-bold mb-2" style="color: #004B35;">工作地點</h6>
-              <p class="small lh-base" style="color: #1F2E2A;">
-                台北地區。
-              </p>
+            <div class="d-flex align-items-center gap-2 small">
+              <span class="fw-bold" style="color: #004B35;">💰 薪資待遇：</span>
+              <span style="color: #1F2E2A;">5等9級～6等7級(月支付遇約40,928～45,957元)</span>
             </div>
           </div>
+  
+          <!-- Accordion -->
+          <div class="accordion" id="jobAccordion">
+            <!-- A組 -->
+            <div class="accordion-item border-0 mb-2">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseA" aria-expanded="false" aria-controls="collapseA" style="border:1px solid #F8F9F6;color: #004B35;">
+                  A組
+                </button>
+              </h2>
+              <div id="collapseA" class="accordion-collapse collapse" data-bs-parent="#jobAccordion">
+                <div class="accordion-body">
+                  <div class="mb-4">
+                    <h6 class="fw-bold mb-2" style="color: #004B35;">學歷條件</h6>
+                    <p class="small lh-base" style="color: #1F2E2A;">
+                      專科（含）以上學歷（含應屆畢業生），科系不限。
+                    </p>
+                  </div>
+  
+                  <div class="mb-4">
+                    <h6 class="fw-bold mb-2" style="color: #004B35;">外語能力</h6>
+                    <p class="small lh-base mb-2" style="color: #1F2E2A;">
+                      語言門檻（任一即可）：
+                    </p>
+                    <ul class="small lh-base" style="color: #1F2E2A;">
+                      <li>TOEIC（多益）800分</li>
+                      <li>TOEFL iBT（托福）75分 或 ITP 560分</li>
+                      <li>IELTS（雅思）6分</li>
+                      <li>FLPT外語能力測驗 筆試220分；口說S-2+</li>
+                      <li>全民英檢中高級</li>
+                      <li>JLPT（日檢）1級或N1級</li>
+                      <li>歐檢B2(含)以上</li>
+                      <li>TestDaF TDN3(含)以上（聽/說/讀/寫四項成績皆達到3分以上）</li>
+                    </ul>
+                  </div>
+  
+                  <div class="mb-4">
+                    <h6 class="fw-bold mb-2" style="color: #004B35;">加分條件</h6>
+                    <ul class="small lh-base" style="color: #1F2E2A;">
+                      <li>具備擔任理財人員意願者尤佳</li>
+                      <li>有汽車或商業重型機車駕照尤佳</li>
+                    </ul>
+                  </div>
+  
+                  <div class="mb-4">
+                    <h6 class="fw-bold mb-2" style="color: #004B35;">敘薪條件</h6>
+                    <p class="small lh-base" style="color: #1F2E2A;">
+                      5等9級初級辦事員 (月支待遇約40,928元)
+                    </p>
+                  </div>
+  
+                  <div class="mb-4">
+                    <h6 class="fw-bold mb-2" style="color: #004B35;">工作地點</h6>
+                    <p class="small lh-base" style="color: #1F2E2A;">
+                      台北地區、桃園地區、新竹地區、豐原/東勢地區、南投地區、雲林地區、北港/朴子地區、嘉義地區、北台南地區、台南地區、台南新市地區、台南善化地區、南高雄地區、北高雄地區、屏東地區
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- B組 -->
+            <div class="accordion-item border-0 mb-2">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseB" aria-expanded="false" aria-controls="collapseB" style="border:1px solid #F8F9F6;color: #004B35;">
+                  B組
+                </button>
+              </h2>
+              <div id="collapseB" class="accordion-collapse collapse" data-bs-parent="#jobAccordion">
+                <div class="accordion-body">
+                  <div class="mb-4">
+                    <h6 class="fw-bold mb-2" style="color: #004B35;">學歷條件</h6>
+                    <p class="small lh-base" style="color: #1F2E2A;">
+                      國內、外大學（含）以上學歷，科系不限。
+                    </p>
+                  </div>
+  
+                  <div class="mb-4">
+                    <h6 class="fw-bold mb-2" style="color: #004B35;">外語能力</h6>
+                    <p class="small lh-base mb-2" style="color: #1F2E2A;">
+                      外語門檻（任一即可）：
+                    </p>
+                    <ul class="small lh-base" style="color: #1F2E2A;">
+                      <li>TOEIC（多益）650分</li>
+                      <li>TOEFL iBT（托福）50分 或 ITP 490分</li>
+                      <li>IELTS（雅思）5.0分</li>
+                      <li>FLPT外語能力測驗 筆試190分；口說S-2</li>
+                      <li>全民英檢中級</li>
+                      <li>JLPT（日檢）2級或N2級</li>
+                      <li>歐檢B1(含)以上</li>
+                      <li>TestDaF TDN2(含)以上（聽/說/讀/寫四項成績皆達到2分以上）</li>
+                    </ul>
+                  </div>
+  
+                  <div class="mb-4">
+                    <h6 class="fw-bold mb-2" style="color: #004B35;">敘薪條件</h6>
+                    <p class="small lh-base" style="color: #1F2E2A;">
+                      6等5級中級辦事員 (月支待遇約44,410元)
+                    </p>
+                  </div>
+  
+                  <div class="mb-4">
+                    <h6 class="fw-bold mb-2" style="color: #004B35;">工作地點</h6>
+                    <p class="small lh-base" style="color: #1F2E2A;">
+                      台北地區
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- C組 -->
+            <div class="accordion-item border-0 mb-2">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseC" aria-expanded="false" aria-controls="collapseC" style="border:1px solid #F8F9F6;color: #004B35;">
+                  C組
+                </button>
+              </h2>
+              <div id="collapseC" class="accordion-collapse collapse" data-bs-parent="#jobAccordion">
+                <div class="accordion-body">
+                  <div class="mb-4">
+                    <h6 class="fw-bold mb-2" style="color: #004B35;">學歷條件</h6>
+                    <p class="small lh-base" style="color: #1F2E2A;">
+                      國內、外大學（含）以上學歷，科系不限。
+                    </p>
+                  </div>
+  
+                  <div class="mb-4">
+                    <h6 class="fw-bold mb-2" style="color: #004B35;">外語能力</h6>
+                    <p class="small lh-base mb-2" style="color: #1F2E2A;">
+                      語言門檻：
+                    </p>
+                    <ul class="small lh-base" style="color: #1F2E2A;">
+                      <li>TOEIC（多益）800分</li>
+                      <li>TOEFL iBT（托福）75分 或 ITP 560分</li>
+                      <li>IELTS（雅思）6分</li>
+                      <li>FLPT外語能力測驗筆試220分；口說S-2+</li>
+                      <li>全民英檢中高級</li>
+                      <li>JLPT（日檢）1級或N1級</li>
+                      <li>歐檢B2(含)以上</li>
+                      <li>TestDaF TDN3(含)以上</li>
+                    </ul>
+                  </div>
+  
+                  <div class="mb-4">
+                    <h6 class="fw-bold mb-2" style="color: #004B35;">工作經驗</h6>
+                    <p class="small lh-base" style="color: #1F2E2A;">
+                      具備公民營銀行工作經驗2年以上。
+                    </p>
+                  </div>
+  
+                  <div class="mb-4">
+                    <h6 class="fw-bold mb-2" style="color: #004B35;">證照要求</h6>
+                    <p class="small lh-base mb-2" style="color: #1F2E2A;">
+                      證照（任一）：
+                    </p>
+                    <ul class="small lh-base" style="color: #1F2E2A;">
+                      <li>信託業務業務員資格合格證明書</li>
+                      <li>銀行內部控制與內部稽核測驗</li>
+                    </ul>
+                  </div>
+  
+                  <div class="mb-4">
+                    <h6 class="fw-bold mb-2" style="color: #004B35;">加分條件</h6>
+                    <ul class="small lh-base" style="color: #1F2E2A;">
+                      <li>有汽車或商業重型機車駕照尤佳</li>
+                      <li>有民營銀行徵授信、外匯實務經驗者優先</li>
+                    </ul>
+                  </div>
+  
+                  <div class="mb-4">
+                    <h6 class="fw-bold mb-2" style="color: #004B35;">敘薪條件</h6>
+                    <p class="small lh-base" style="color: #1F2E2A;">
+                      6等7級中級辦事員 (月支待遇約45,957元)
+                    </p>
+                  </div>
+  
+                  <div class="mb-4">
+                    <h6 class="fw-bold mb-2" style="color: #004B35;">工作地點</h6>
+                    <p class="small lh-base" style="color: #1F2E2A;">
+                      台北地區、桃園地區、新竹地區、豐原/東勢地區、台中地區、南投地區、雲林地區、北港/朴子地區、嘉義地區、北台南地區、台南地區、南高雄地區、北高雄地區、屏東地區
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    
-        <!-- 底部按鈕 -->
-        <div class="offcanvas-footer border-top p-3 bg-white" style="position: sticky; bottom: 0;">
-          <a href="https://www.firstbank.com.tw/recruitment" target="_blank" rel="noopener noreferrer" 
-             class="btn w-100 text-white py-3 rounded-pill fw-bold shadow" 
-             style="background-color: #004B35; font-size: 1.1rem;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-2" style="display: inline-block; vertical-align: middle;">
-              <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
-              <path d="m21.854 2.147-10.94 10.939"></path>
-            </svg>
-            立即投遞
-          </a>
-        </div>
-    </div>
+      </div>
+  
+      <!-- 底部按鈕 -->
+      <div class="offcanvas-footer border-top p-3 bg-white" style="position: sticky; bottom: 0;">
+        <a href="https://www.firstbank.com.tw/recruitment" target="_blank" rel="noopener noreferrer" 
+           class="btn w-100 text-white py-3 rounded-pill fw-bold shadow" 
+           style="background-color: #004B35; font-size: 1.1rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-2" style="display: inline-block; vertical-align: middle;">
+            <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
+            <path d="m21.854 2.147-10.94 10.939"></path>
+          </svg>
+          立即投遞
+        </a>
+      </div>
+  </div>
+
+
+    <!-- 徵授信經驗行員 -->
     <div class="offcanvas offcanvas-end w-40" tabindex="-1" id="morejobcard6" aria-labelledby="morejobcardlabel6">
         <div class="offcanvas-header align-items-start" style="background-color: #004B35;">
           <div class="py-3">
             <h5 id="morejobcardlabel6" class="text-white mb-2 h3">徵授信經驗行員</h5>
-            <span class="badge rounded-pill px-3 py-2" style="background-color:#3E6F5E">一般組MA</span>
           </div>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -812,11 +951,13 @@
           </a>
         </div>
     </div>
+
+
+    <!-- 專案助理理財人員 -->
     <div class="offcanvas offcanvas-end w-40" tabindex="-1" id="morejobcard7" aria-labelledby="morejobcardlabel7">
         <div class="offcanvas-header align-items-start" style="background-color: #004B35;">
           <div class="py-3">
             <h5 id="morejobcardlabel7" class="text-white mb-2 h3">專案助理理財人員</h5>
-            <span class="badge rounded-pill px-3 py-2" style="background-color:#3E6F5E">一般組MA</span>
           </div>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -906,11 +1047,13 @@
           </a>
         </div>
     </div>
+
+
+    <!-- 專案理財人員 -->
     <div class="offcanvas offcanvas-end w-40" tabindex="-1" id="morejobcard8" aria-labelledby="morejobcardlabel8">
         <div class="offcanvas-header align-items-start" style="background-color: #004B35;">
           <div class="py-3">
             <h5 id="morejobcardlabel8" class="text-white mb-2 h3">專案理財人員</h5>
-            <span class="badge rounded-pill px-3 py-2" style="background-color:#3E6F5E">一般組MA</span>
           </div>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -1003,6 +1146,7 @@
 </section>
 
 
+<!-- 關於第一銀行 -->
 <section class="py-6" style="background-color:#F8F9F6" id="about">
     <div class="container">
         <!-- 標題區 -->
@@ -1014,14 +1158,14 @@
         <!-- 內容區 -->
         <div class="row justify-content-center gap-5">
             <!-- 左側：關於第一銀行 -->
-            <div class="col-lg-5 bg-white p-4">
-                <div class="info-card">
+            <div class="col-lg-5 col-10 bg-white p-4 shadow rounded-4">
+                <div>
                     <div class="d-flex align-items-center mb-4">
                         <div class="icon-box">
                             <i class="bi bi-building text-green fs-4"></i>
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fw-bold ucide lucide-building2 w-8 h-8 text-[#004B35] flex-shrink-0"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>
-                        <h3 class="text-green fw-bold mb-0 ms-2 fs-5">關於第一銀行</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fw-bold ucide lucide-building2 w-8 h-8 text-[#004B35] flex-shrink-0"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>
+                        <h3 class="text-darkgreen fw-bold mb-0 ms-2 fs-3">關於第一銀行</h3>
                     </div>
 
                     <div class="text-muted lh-lg">
@@ -1039,7 +1183,7 @@
             </div>
 
             <!-- 右側：全球據點分布 -->
-            <div class="col-lg-5 bg-white p-4">
+            <div class="col-lg-5 col-10 bg-white p-4 rounded-4 shadow">
                 <div class="map-card">
                     <div class="d-flex align-items-center mb-3">
                         <div class="icon-box bg-white">
@@ -1053,7 +1197,7 @@
                     </p>
 
                     <!-- 地圖圖片區域 -->
-                    <div class="position-relative map-container border" style="min-height: 350px;">
+                    <div class="position-relative map-container border">
                         <img src="./image/map.png" alt="全球據點地圖" class="img-fluid rounded">
                         
                         <!-- 覆蓋層與按鈕 -->
@@ -1093,7 +1237,7 @@
               </p>
 
               <!-- 地圖圖片區域 -->
-              <div class="position-relative" style="min-height: 350px;">
+              <div class="position-relative">
                   <img src="./image/map.png" alt="全球據點地圖" class="img-fluid rounded">
               </div>
 
@@ -1112,15 +1256,15 @@
 <section class="py-5" id="project">
     <div class="container">
         <!-- 標題區 -->
-        <div class="text-center mb-5">
-            <h2 class="text-green fw-bold mb-3">MA 培育計畫｜你的第一份工作，就是第一線領導者培訓</h2>
+        <div class="text-center my-6">
+            <h2 class="text-green fw-bold mb-3" style="font-size:2.2rem">MA 培育計畫｜你的第一份工作，就是第一線領導者培訓</h2>
             <p class="mb-0">三年內完成跨部門輪調，實戰累積領導力與專業力，</p>
             <p>從新鮮人，成為具備國際視野的金融人才。</p>
         </div>
 
         <div class="row justify-content-center gap-3">
             <!-- STEP 1 - 添加 step-card-wrapper class -->
-            <div class="col-lg-3 step-card-wrapper d-flex flex-column justify-content-between align-items-start p-3 rounded-3" style="height:480px; background-color:#F9FAF9">
+            <div class="col-lg-3 col-10 step-card-wrapper d-flex flex-column justify-content-between align-items-start p-3 rounded-3" style="height:480px; background-color:#F9FAF9">
                 <div>
                     <div class="icon-circle">
                         <svg xmlns="http://www.w3.org/2000/svg" 
@@ -1151,7 +1295,7 @@
             </div>
 
             <!-- STEP 2 - 添加 step-card-wrapper class -->
-            <div class="col-lg-3 step-card-wrapper d-flex flex-column justify-content-between align-items-start p-3 rounded-3" style="height:480px; background-color:#F9FAF9">
+            <div class="col-lg-3 col-10 step-card-wrapper d-flex flex-column justify-content-between align-items-start p-3 rounded-3" style="height:480px; background-color:#F9FAF9">
                 <div>
                     <div class="icon-circle">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-white">
@@ -1173,7 +1317,7 @@
             </div>
 
             <!-- STEP 3 - 添加 step-card-wrapper class -->
-            <div class="col-lg-3 step-card-wrapper d-flex flex-column justify-content-between align-items-start p-3 rounded-3" style="height:480px; background-color:#F9FAF9">
+            <div class="col-lg-3 col-10 step-card-wrapper d-flex flex-column justify-content-between align-items-start p-3 rounded-3" style="height:480px; background-color:#F9FAF9">
                 <div>
                     <div class="icon-circle">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-white">
@@ -1202,38 +1346,38 @@
  <section>
     <div class="container">
         <div class="text-center">
-            <h3 class="fs-2 text-darkgreen">MA 專屬培育與成長藍圖</h3>
+            <h3 class="fs-2 text-darkgreen mt-4">MA 專屬培育與成長藍圖</h3>
             <p class="text-muted small">系統化訓練 × 專屬導師 × 內部成長機會</p>
             <p class="text-muted small">在第一銀行，你學的不只是工作，而是金融領域的專業與舞台。</p>
         </div>
-        <div class="row gap-3 justify-content-center mt-3">
-            <div class="col-lg-5 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
+        <div class="row gap-3 justify-content-center mt-4 px-3 px-md-0">
+            <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
                 <div class="icon-circle icon-circle-light m-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
                 </div>
-                <h3 class="fs-4 text-darkgreen mt-2 fw-bold">新進訓練</h3>
+                <h3 class="fs-5 text-darkgreen mt-3 fw-bold hover-gold">新進訓練</h3>
                 <p class="text-muted small">系統化課程，快速熟悉銀行文化與流程。</p>
             </div>
-            <div class="col-lg-5 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
+            <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
                 <div class="icon-circle icon-circle-light m-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                 </div>
-                <h3 class="fs-4 text-darkgreen mt-2 fw-bold">新進訓練</h3>
-                <p class="text-muted small">系統化課程，快速熟悉銀行文化與流程。</p>
+                <h3 class="fs-5 text-darkgreen mt-3 fw-bold hover-gold">跨部門輪調</h3>
+                <p class="text-muted small">多元實務體驗，深入了解整體金融運作。</p>
             </div>
-            <div class="col-lg-5 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
+            <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
                 <div class="icon-circle icon-circle-light m-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><polyline points="16 11 18 13 22 9"></polyline></svg>
                 </div>
-                <h3 class="fs-4 text-darkgreen mt-2 fw-bold">新進訓練</h3>
-                <p class="text-muted small">系統化課程，快速熟悉銀行文化與流程。</p>
+                <h3 class="fs-5 text-darkgreen mt-3 fw-bold hover-gold">專屬導師</h3>
+                <p class="text-muted small">資深主管一對一帶領，持續給予實戰建議。</p>
             </div>
-            <div class="col-lg-5 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
+            <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
                 <div class="icon-circle icon-circle-light m-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
                 </div>
-                <h3 class="fs-4 text-darkgreen mt-2 fw-bold">新進訓練</h3>
-                <p class="text-muted small">系統化課程，快速熟悉銀行文化與流程。</p>
+                <h3 class="fs-5 text-darkgreen mt-3 fw-bold hover-gold">MA 成長社群</h3>
+                <p class="text-muted small">同梯夥伴、內部分享、交流資源。</p>
             </div>
         </div>
     </div>
@@ -1247,32 +1391,32 @@
             <p class="text-muted small">我們提供優於業界的薪酬，讓努力都能被看見。</p>
         </div>
         <div class="row gap-3 justify-content-center mt-3">
-            <div class="col-lg-5 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
+            <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
                 <div class="icon-circle icon-circle-light m-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
                 </div>
-                <h3 class="fs-4 text-darkgreen mt-2 fw-bold">起薪優渥</h3>
+                <h3 class="fs-5 text-darkgreen mt-3 fw-bold hover-gold">起薪優渥</h3>
                 <p class="text-muted small">具競爭力的薪酬與績效獎金。</p>
             </div>
-            <div class="col-lg-5 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
+            <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
                 <div class="icon-circle icon-circle-light m-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
                 </div>
-                <h3 class="fs-4 text-darkgreen mt-2 fw-bold">健康＆保障</h3>
+                <h3 class="fs-5 text-darkgreen mt-3 fw-bold hover-gold">健康＆保障</h3>
                 <p class="text-muted small">完整保險、定期健檢，安心工作無後顧之憂。</p>
             </div>
-            <div class="col-lg-5 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
+            <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
                 <div class="icon-circle icon-circle-light m-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gift text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><rect x="3" y="8" width="18" height="4" rx="1"></rect><path d="M12 8v13"></path><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path></svg>
                 </div>
-                <h3 class="fs-4 text-darkgreen mt-2 fw-bold">休假與生活</h3>
+                <h3 class="fs-5 text-darkgreen mt-3 fw-bold hover-gold">休假與生活</h3>
                 <p class="text-muted small">旅遊補助、生日／節慶禮金，享受工作與生活平衡。</p>
             </div>
-            <div class="col-lg-5 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
+            <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
                 <div class="icon-circle icon-circle-light m-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
                 </div>
-                <h3 class="fs-4 text-darkgreen mt-2 fw-bold">穩健成長</h3>
+                <h3 class="fs-5 text-darkgreen mt-3 fw-bold hover-gold">穩健成長</h3>
                 <p class="text-muted small">員工持股信託、內部晉升制度，累積你的職涯資產。</p>
             </div>
         </div>
@@ -1281,11 +1425,11 @@
 
  <!--準備好加速你的職涯了嗎區塊 -->
  <section class="mt-5">
-    <div class="container text-center rounded-5 py-5 shadow-sm" style="background-color:#F2F7F5;max-width:1100px">
+    <div class="container-custom text-center rounded-5 py-5 shadow-sm" style="background-color:#F2F7F5;max-width:1100px">
         <h3>準備好加速你的職涯了嗎？</h3>
         <p>成為第一銀行 MA 培訓生，下一位領導新時代的你。</p>
-        <div class="d-flex justify-content-center">
-          <button class="btn btn-green bg-darkgreen rounded-pill btn-lg">立即申請 MA 培訓</button>
+        <div class="d-flex justify-content-center mt-4">
+          <a class="btn btn-green bg-darkgreen rounded-pill px-4 py-3 btn-hover-gold" href="#job">立即申請 MA 培訓</a>
         </div>
 
     </div>
@@ -1300,10 +1444,10 @@
             <p class="fs-6">參加校園博覽會與說明會，了解更多第一銀行 MA 計畫！</p>
         </div>
         <div class="mt-6">
-            <h3 class="text-center mb-5">徵才博覽會資訊</h3>
+            <h3 class="text-center mb-5 text-deepgreen">徵才博覽會資訊</h3>
         </div>
             <div class="row gap-3 justify-content-center">
-                <div class="col-lg-5 bg-white p-3 rounded-4 shadow card-hover-effect">
+                <div class="col-lg-5 col-10 bg-white p-3 py-4 rounded-4 shadow card-hover-effect" style="background-color:#F9FAF9">
                     <div class="icon-circle icon-circle-light">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
                     </div>
@@ -1315,7 +1459,7 @@
                         <li class="small">臺北大學　3 月 19 日（星期三）10:00–15:30</li>
                     </ul>
                 </div>
-                <div class="col-lg-5 bg-white p-3 rounded-4 shadow card-hover-effect">
+                <div class="col-lg-5 col-10 bg-white p-3 py-4 rounded-4 shadow card-hover-effect" style="background-color:#F9FAF9">
                     <div class="icon-circle icon-circle-light">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
                     </div>
@@ -1329,11 +1473,11 @@
                 </div>
             </div>
             <div class="mt-6">
-                <h3 class="text-center mb-5">徵才說明會資訊</h3>
+                <h3 class="text-center mb-5 text-deepgreen">徵才說明會資訊</h3>
             </div>
             <div class="row gap-3 justify-content-center">
                 <!-- 左側卡片 -->
-                <div class="col-lg-5 bg-white p-4 rounded-4 shadow card-hover-effect">
+                <div class="col-lg-5 col-10 bg-white p-4 rounded-4 shadow card-hover-effect">
                     
                         <div class="icon-circle icon-circle-light" style="width: 80px; height: 80px; background-color: #E8ECEB;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-darkgreen">
@@ -1378,7 +1522,7 @@
                 </div>
             
                 <!-- 右側卡片 -->
-                <div class="col-lg-5 bg-white p-4 rounded-4 shadow card-hover-effect">
+                <div class="col-lg-5 col-10 bg-white p-4 rounded-4 shadow card-hover-effect">
                     <div class="d-flex align-items-center mb-4">
                         <div class="icon-circle icon-circle-light" style="width: 80px; height: 80px; background-color: #E8ECEB;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-darkgreen">
@@ -1436,7 +1580,7 @@
                                   <div>
                                       <h5 class="mb-2">詳細資訊</h5>
                                       <a href="https://www.firstbank.com.tw/sites/2025recruit/" 
-                                         class="text-decoration-none" 
+                                         class="text-decoration-none text-break" 
                                          target="_blank">
                                           https://www.firstbank.com.tw/sites/2025recruit/
                                       </a>
@@ -1479,7 +1623,7 @@
                       </div>
   
                       <!-- 截止時間 -->
-                      <div class="bg-darkgreen text-white text-center py-4 rounded-4">
+                      <div class="bg-darkgreen text-white text-center px-2 py-4 rounded-4">
                           <h5 class="mb-2">截止時間</h5>
                           <h3 class="mb-0">2025/4/8（二）17:00</h3>
                       </div>
@@ -1544,11 +1688,11 @@
         
         <div class="container mt-6" style="background-color:#F3F8F6">
           <div class="row justify-content-center">
-            <div class="col-lg-10 p-5 rounded-4" style="background-color:#e8f1ef">
+            <div class="col-lg-10 col-10 p-5 rounded-4" style="background-color:#e8f1ef">
               <h3 class="text-center">想更了解第一銀行 MA 職缺？</h3>
               <p class="text-center mb-4">加入我們，踏上你的職涯第一站，成為新世代的金融領袖！</p>
               <div class="d-flex justify-content-center">
-                <button class="btn btn-green bg-darkgreen rounded-pill btn-lg">立即申請 MA 計畫</button>
+                <button class="btn btn-green bg-darkgreen rounded-pill p-3 px-4 btn-hover-gold">立即申請 MA 計畫</button>
               </div>
             </div>
           </div>
@@ -1559,20 +1703,20 @@
  <!-- Ｑ＆Ａ區塊 -->
  <section class="container-fluid py-5" id="q&a">
   <div class="row justify-content-center">
-      <div class="col-lg-6">
-          <h2 class="text-center mb-3" style="color: #004B35;">Q&A 常見問題</h2>
-          <p class="text-center text-muted mb-5">為你解答常見的申請與錄取問題</p>
+      <div class="col-lg-6 col-10">
+          <h2 class="text-center mb-3 text-green fw-bold" style="font-size:2.2rem">Q&A 常見問題</h2>
+          <p class="text-center mb-5" style="font-size:1.15rem;color:#789297">為你解答常見的申請與錄取問題</p>
 
           <div class="accordion" id="faqAccordion">
               <!-- 問題 1 -->
-              <div class="accordion-item mb-3">
+              <div class="accordion-item mb-3 shadow-sm">
                   <h2 class="accordion-header">
                       <button class="accordion-button d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
                           <span class="rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0 me-3" 
                                 style="width: 40px; height: 40px; background-color: #004B35; color: white; font-weight: bold;">
                               Q
                           </span>
-                          <span class="flex-grow-1">金融相關證照的取得為必要條件嗎？</span>
+                          <span class="flex-grow-1 text-green fw-bold">金融相關證照的取得為必要條件嗎？</span>
                       </button>
                   </h2>
                   <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
@@ -1587,14 +1731,14 @@
               </div>
 
               <!-- 問題 2 -->
-              <div class="accordion-item mb-3">
+              <div class="accordion-item mb-3 shadow-sm">
                   <h2 class="accordion-header">
                       <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
                           <span class="rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0 me-3" 
                                 style="width: 40px; height: 40px; background-color: #004B35; color: white; font-weight: bold;">
                               Q
                           </span>
-                          <span class="flex-grow-1">履歷送出後，大約多久會收到下一階段通知？</span>
+                          <span class="flex-grow-1 text-green fw-bold">履歷送出後，大約多久會收到下一階段通知？</span>
                       </button>
                   </h2>
                   <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -1610,14 +1754,14 @@
               </div>
 
               <!-- 問題 3 -->
-              <div class="accordion-item mb-3">
+              <div class="accordion-item mb-3 shadow-sm">
                   <h2 class="accordion-header">
                       <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
                           <span class="rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0 me-3" 
                                 style="width: 40px; height: 40px; background-color: #004B35; color: white; font-weight: bold;">
                               Q
                           </span>
-                          <span class="flex-grow-1">若我不是商管科系畢業的，也沒有金融業相關經歷，是否可報名參加？</span>
+                          <span class="flex-grow-1 text-green fw-bold">若我不是商管科系畢業的，也沒有金融業相關經歷，是否可報名參加？</span>
                       </button>
                   </h2>
                   <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -1632,14 +1776,14 @@
               </div>
 
               <!-- 問題 4 -->
-              <div class="accordion-item mb-3">
+              <div class="accordion-item mb-3 shadow-sm">
                   <h2 class="accordion-header">
                       <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
                           <span class="rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0 me-3" 
                                 style="width: 40px; height: 40px; background-color: #004B35; color: white; font-weight: bold;">
                               Q
                           </span>
-                          <span class="flex-grow-1">若我的語言成績尚未公布，是否可先投遞履歷？</span>
+                          <span class="flex-grow-1 text-green fw-bold">若我的語言成績尚未公布，是否可先投遞履歷？</span>
                       </button>
                   </h2>
                   <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -1655,14 +1799,14 @@
               </div>
 
               <!-- 問題 5 -->
-              <div class="accordion-item mb-3">
+              <div class="accordion-item mb-3 shadow-sm">
                   <h2 class="accordion-header">
                       <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
                           <span class="rounded-circle d-inline-flex align-items-center justify-content-center flex-shrink-0 me-3" 
                                 style="width: 40px; height: 40px; background-color: #004B35; color: white; font-weight: bold;">
                               Q
                           </span>
-                          <span class="flex-grow-1">我現在正在服兵役，是否可以應徵？</span>
+                          <span class="flex-grow-1 text-green fw-bold">我現在正在服兵役，是否可以應徵？</span>
                       </button>
                   </h2>
                   <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -1683,7 +1827,7 @@
 <!-- 更多了解我們區塊 -->
 <section class="container-fluid py-5" style="background-color:#F8F9F6">
   <div class="row justify-content-center">
-      <div class="col-lg-6">
+      <div class="col-lg-6 col-10">
           <h2 class="text-center mb-3" style="color: #004B35;">更多了解我們</h2>
           <p class="text-center text-muted mb-5">想知道制度、培訓、生活、升遷，都在這邊</p>
 
@@ -2100,12 +2244,12 @@
 <div class="fixed-bottom bg-white border-top shadow-sm py-3">
   <div class="container">
     <div class="row g-2 justify-content-center">
-      <div class="col-3">
+      <div class="col-md-3 col-6">
         <button type="button" class="text-black btn btn-outline-success w-100 rounded-3 py-1 fw-semibold">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-2 lucide lucide-briefcase mr-2"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>瀏覽職缺
         </button>
       </div>
-      <div class="col-3">
+      <div class="col-md-3 col-6">
         <button type="button" class="btn btn-success w-100 rounded-3 py-1 fw-semibold">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-2 lucide lucide-send mr-2"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>立即應徵
         </button>

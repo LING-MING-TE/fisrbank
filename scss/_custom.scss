@@ -1,8 +1,20 @@
+@font-face {
+  font-family: 'Noto Sans TC';
+  src: url('../font-family/NotoSansTC-Thin.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+$font-family-base: 'Noto Sans TC', sans-serif;
+
 .bg-darkgreen{
   background-color:#004B35;
 }
 .text-darkgreen{
   color:#004B35;
+}
+.text-deepgreen{
+  color:#103F2F;
 }
 .btn-outline-darkgreen {
     color: #004B35;
@@ -21,8 +33,38 @@
     background-color: #004B35;
     border-color: #004B35;
 }
+.btn-hover-gold {
+  transition: all 0.3s ease;
+}
+
+.btn-hover-gold:hover {
+  background-color: #B49D60 !important;
+  color: #004B35 !important;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
 .w-40{
   width:40% !important;
+}
+/* 手機版保持全寬 */
+@media (max-width: 768px) {
+  .offcanvas.w-40 {
+    width: 100% !important;
+  }
+}
+/* 桌面版全寬，手機版 80% */
+.container-custom {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 767px) {
+  .container-custom {
+      width: 80%;
+  }
 }
 section, [id] {
   scroll-margin-top: 80px; /* 導覽列高度 + 一些額外空間 */
@@ -36,6 +78,21 @@ section, [id] {
   }
 
   /* 地圖圖片 */
+  .map-container {
+    min-height: auto;
+}
+
+.map-container img {
+    display: block; /* 移除圖片底部的空白 */
+}
+
+/* 如果需要在桌面版設定最小高度，改為限制圖片高度 */
+@media (min-width: 768px) {
+    .map-container img {
+        min-height: 350px;
+        object-fit: cover; /* 讓圖片填滿容器 */
+    }
+}
   .map-container img {
       width: 100%;
       height: 100%;
@@ -152,6 +209,13 @@ section, [id] {
   transform: scale(1.02);              /* 內容放大 2% */
   transition: transform 0.3s ease;
 }
+/* 修改:增加選擇器優先級 */
+.card-hover-effect:hover h3.hover-gold {
+  color: #B49D60 !important;
+}
+.card-hover-effect:hover svg {
+  stroke: #B49D60 !important;
+}
 .accordion-item {
     border: none !important;
     border-radius: 1rem !important;
@@ -169,6 +233,16 @@ section, [id] {
 
 .accordion-button.collapsed {
     border-radius: 1rem !important;
+}
+/* 只針對深綠色背景的 Q icon */
+.accordion-button:hover span[style*="background-color: #004B35"] {
+  background-color: #B49D60 !important;
+  box-shadow: 0 4px 8px rgba(180, 157, 96, 0.3);
+  transition: all 0.3s ease;
+}
+
+.accordion-button span[style*="background-color: #004B35"] {
+  transition: all 0.3s ease;
 }
 .profile-img {
   width: 120px;
