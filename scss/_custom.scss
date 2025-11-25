@@ -288,3 +288,72 @@ section, [id] {
   font-weight: bold;
   line-height: 1;
 }
+
+
+/*插圖樣式*/
+.illustration4-img {
+  max-width: 280px;
+}
+
+/* 平板 (Bootstrap 的 md 斷點: 768px ~ 1199px) */
+@media (max-width: 1199px) {
+  .illustration4-img {
+      max-width: 220px;
+  }
+}
+
+/* 手機 (小於 768px) */
+@media (max-width: 767px) {
+  .illustration4-img {
+      max-width: 150px;
+  }
+}
+.map-corner-img {
+  max-width: 150px;
+}
+
+/* 平板 (Bootstrap 的 md 斷點: 768px ~ 1199px) */
+@media (max-width: 1199px) {
+  .map-corner-img {
+      max-width: 130px;
+  }
+}
+
+/* 手機 (小於 768px) */
+@media (max-width: 767px) {
+  .map-corner-img {
+      max-width: 120px;
+  }
+}
+.card10-img {
+  transform: rotate(-30deg);
+}
+.benefit-decoration-img {
+  top: 0;
+  right: 0;
+  transform: translate(-70%, -50%);
+  z-index: 10;
+}
+
+.benefit-decoration-img img {
+  max-width: 200px;
+}
+
+/* 平板尺寸 */
+@media (max-width: 1199px) {
+  .benefit-decoration-img img {
+      max-width: 150px;
+      transform: translate(30%, -10%);
+  }
+}
+
+/* 手機尺寸 */
+@media (max-width: 767px) {
+  .benefit-decoration-img img {
+      max-width: 120px;
+  }
+  
+  .benefit-decoration-img {
+      transform: translate(-20%, -40%);
+  }
+}
