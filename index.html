@@ -103,7 +103,7 @@
         
         <!-- 桌面時顯示:卡片2右上角的圖片 -->
         <div class="position-absolute d-none d-xl-block card-decoration-img" style="top: 0; right: 0; transform: translate(30%, -30%); z-index: 10;">
-            <img src="image/illustration2.png" alt="裝飾圖" class="img-fluid" style="max-width: 150px;">
+            <img src="image/illustration2.png" alt="裝飾圖" class="img-fluid" style="max-width: 230px;">
         </div>
     </div>
     
@@ -269,7 +269,7 @@
         
         <!-- 桌面時顯示:卡片9左下角的圖片 -->
         <div class="position-absolute d-none d-xl-block card-decoration-img" style="bottom: 0; left: 0; transform: translate(-50%, 50%) rotate(-15deg); z-index: 10;">
-            <img src="image/illustration2.png" alt="裝飾圖" class="img-fluid" style="max-width: 150px;">
+            <img src="image/illustration2.png" alt="裝飾圖" class="img-fluid" style="max-width: 230px;">
         </div>
     </div>
 
@@ -1537,92 +1537,97 @@
 
 
 <section class="py-5" id="project">
-    <div class="container">
-        <!-- 標題區 -->
-        <div class="text-center my-6">
-            <h2 class="text-green fw-bold mb-3" style="font-size:2.2rem">MA 培育計畫｜你的第一份工作，就是第一線領導者培訓</h2>
-            <p class="mb-0">三年內完成跨部門輪調，實戰累積領導力與專業力，</p>
-            <p>從新鮮人，成為具備國際視野的金融人才。</p>
-        </div>
+  <div class="container">
+      <!-- 標題區 -->
+      <div class="text-center my-6">
+          <h2 class="text-green fw-bold mb-3" style="font-size:2.2rem">MA 培育計畫｜你的第一份工作，就是第一線領導者培訓</h2>
+          <p class="mb-0">三年內完成跨部門輪調，實戰累積領導力與專業力，</p>
+          <p>從新鮮人，成為具備國際視野的金融人才。</p>
+      </div>
 
-        <div class="row justify-content-center gap-3">
-            <!-- STEP 1 - 添加 step-card-wrapper class -->
-            <div class="col-lg-3 col-10 step-card-wrapper d-flex flex-column justify-content-between align-items-start p-3 rounded-3" style="height:480px; background-color:#F9FAF9">
-                <div>
-                    <div class="icon-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" 
-                             width="40" height="40"           
-                             viewBox="0 0 24 24" 
-                             fill="none" 
-                             stroke="white"                   
-                             stroke-width="1.5" 
-                             stroke-linecap="round" 
-                             stroke-linejoin="round">
-                            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
-                            <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
-                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
-                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
-                        </svg>
-                    </div>
-                    <div class="text-center">
-                        <p class="badge text-white bg-darkgreen fs-6 rounded-pill">STEP1</p>
-                        <h3 class="text-darkgreen fs-5 fw-bold">啟動潛能</h3>
-                        <p class="text-start">建立金融專業基礎，熟悉第一銀行核心業務，開始跨部門輪調。</p>
-                    </div>
-                </div>
-                <ul style="margin-left: -15px;">
-                    <li>新進培訓課程</li>
-                    <li>進入真實業務場域</li>
-                    <li>Mentor 帶著跑</li>
-                </ul>
-            </div>
+      <div class="row justify-content-center gap-3">
+          <!-- STEP 1 - 添加 position-relative -->
+          <div class="col-lg-3 col-10 step-card-wrapper position-relative d-flex flex-column justify-content-between align-items-start p-3 rounded-3" style="height:480px; background-color:#F9FAF9; overflow: visible;">
+              <!-- 左上角裝飾圖片 -->
+              <div class="position-absolute step1-decoration-img">
+                  <img src="image/illustration4.png" alt="裝飾圖" class="img-fluid">
+              </div>
+              
+              <div>
+                  <div class="icon-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" 
+                           width="40" height="40"           
+                           viewBox="0 0 24 24" 
+                           fill="none" 
+                           stroke="white"                   
+                           stroke-width="1.5" 
+                           stroke-linecap="round" 
+                           stroke-linejoin="round">
+                          <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                          <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                          <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                          <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                      </svg>
+                  </div>
+                  <div class="text-center">
+                      <p class="badge text-white bg-darkgreen fs-6 rounded-pill">STEP1</p>
+                      <h3 class="text-darkgreen fs-5 fw-bold">啟動潛能</h3>
+                      <p class="text-start">建立金融專業基礎，熟悉第一銀行核心業務，開始跨部門輪調。</p>
+                  </div>
+              </div>
+              <ul style="margin-left: -15px;">
+                  <li>新進培訓課程</li>
+                  <li>進入真實業務場域</li>
+                  <li>Mentor 帶著跑</li>
+              </ul>
+          </div>
 
-            <!-- STEP 2 - 添加 step-card-wrapper class -->
-            <div class="col-lg-3 col-10 step-card-wrapper d-flex flex-column justify-content-between align-items-start p-3 rounded-3" style="height:480px; background-color:#F9FAF9">
-                <div>
-                    <div class="icon-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-white">
-                            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
-                            <polyline points="16 7 22 7 22 13"></polyline>
-                        </svg>
-                    </div>
-                    <div class="text-center">
-                        <p class="badge text-white bg-darkgreen fs-6 rounded-pill">STEP2</p>
-                        <h3 class="text-darkgreen fs-5 fw-bold">加速成長</h3>
-                        <p class="text-start">參與策略級任務，看得到成績、背得起責任。MA 計畫為期三年，依階段輪調至國內或海外業務單位，累積跨領域經驗與領導實力。</p>
-                    </div>
-                </div>
-                <ul style="margin-left: -15px;">
-                    <li>實際負責專案模組</li>
-                    <li>直接對接內部主管／決策單位</li>
-                    <li>磨練專業判斷與溝通能力</li>
-                </ul>
-            </div>
+          <!-- STEP 2 -->
+          <div class="col-lg-3 col-10 step-card-wrapper d-flex flex-column justify-content-between align-items-start p-3 rounded-3" style="height:480px; background-color:#F9FAF9">
+              <div>
+                  <div class="icon-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                          <polyline points="16 7 22 7 22 13"></polyline>
+                      </svg>
+                  </div>
+                  <div class="text-center">
+                      <p class="badge text-white bg-darkgreen fs-6 rounded-pill">STEP2</p>
+                      <h3 class="text-darkgreen fs-5 fw-bold">加速成長</h3>
+                      <p class="text-start">參與策略級任務，看得到成績、背得起責任。MA 計畫為期三年，依階段輪調至國內或海外業務單位，累積跨領域經驗與領導實力。</p>
+                  </div>
+              </div>
+              <ul style="margin-left: -15px;">
+                  <li>實際負責專案模組</li>
+                  <li>直接對接內部主管／決策單位</li>
+                  <li>磨練專業判斷與溝通能力</li>
+              </ul>
+          </div>
 
-            <!-- STEP 3 - 添加 step-card-wrapper class -->
-            <div class="col-lg-3 col-10 step-card-wrapper d-flex flex-column justify-content-between align-items-start p-3 rounded-3" style="height:480px; background-color:#F9FAF9">
-                <div>
-                    <div class="icon-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-white">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <circle cx="12" cy="12" r="6"></circle>
-                            <circle cx="12" cy="12" r="2"></circle>
-                        </svg>
-                    </div>
-                    <div class="text-center">
-                        <p class="badge text-white bg-darkgreen fs-6 rounded-pill">STEP3</p>
-                        <h3 class="text-darkgreen fs-5 fw-bold">躍升領導</h3>
-                        <p class="text-start">主導任務、帶領團隊執行，往中階主管或領域專家邁進。</p>
-                    </div>
-                </div>
-                <ul style="margin-left: -15px;">
-                    <li>承接關鍵任務</li>
-                    <li>帶新人／協調資源</li>
-                    <li>晉升管理職或專業顧問型角色</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+          <!-- STEP 3 -->
+          <div class="col-lg-3 col-10 step-card-wrapper d-flex flex-column justify-content-between align-items-start p-3 rounded-3" style="height:480px; background-color:#F9FAF9">
+              <div>
+                  <div class="icon-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <circle cx="12" cy="12" r="6"></circle>
+                          <circle cx="12" cy="12" r="2"></circle>
+                      </svg>
+                  </div>
+                  <div class="text-center">
+                      <p class="badge text-white bg-darkgreen fs-6 rounded-pill">STEP3</p>
+                      <h3 class="text-darkgreen fs-5 fw-bold">躍升領導</h3>
+                      <p class="text-start">主導任務、帶領團隊執行，往中階主管或領域專家邁進。</p>
+                  </div>
+              </div>
+              <ul style="margin-left: -15px;">
+                  <li>承接關鍵任務</li>
+                  <li>帶新人／協調資源</li>
+                  <li>晉升管理職或專業顧問型角色</li>
+              </ul>
+          </div>
+      </div>
+  </div>
 </section>
 
 <!-- MA 專屬培育與成長藍圖區塊 -->
@@ -1634,33 +1639,33 @@
             <p class="text-muted small">在第一銀行，你學的不只是工作，而是金融領域的專業與舞台。</p>
         </div>
         <div class="row gap-3 justify-content-center mt-4 px-3 px-md-0">
-            <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
+            <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#719c71">
                 <div class="icon-circle icon-circle-light m-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
                 </div>
-                <h3 class="fs-5 text-darkgreen mt-3 fw-bold hover-gold">新進訓練</h3>
+                <h3 class="fs-5 text-white mt-3 fw-bold hover-gold">新進訓練</h3>
                 <p class="text-muted small">系統化課程，快速熟悉銀行文化與流程。</p>
             </div>
-            <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
+            <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#719c71">
                 <div class="icon-circle icon-circle-light m-0">
                   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                 </div>
-                <h3 class="fs-5 text-darkgreen mt-3 fw-bold hover-gold">跨部門輪調</h3>
-                <p class="text-muted small">多元實務體驗，深入了解整體金融運作。</p>
+                <h3 class="fs-5 text-white mt-3 fw-bold hover-gold">跨部門輪調</h3>
+                <p class="text-white small">多元實務體驗，深入了解整體金融運作。</p>
             </div>
-            <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
+            <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#719c71">
                 <div class="icon-circle icon-circle-light m-0">
                   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><polyline points="16 11 18 13 22 9"></polyline></svg>
                 </div>
-                <h3 class="fs-5 text-darkgreen mt-3 fw-bold hover-gold">專屬導師</h3>
-                <p class="text-muted small">資深主管一對一帶領，持續給予實戰建議。</p>
+                <h3 class="fs-5 text-white mt-3 fw-bold hover-gold">專屬導師</h3>
+                <p class="text-white small">資深主管一對一帶領，持續給予實戰建議。</p>
             </div>
-            <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
+            <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#719c71">
                 <div class="icon-circle icon-circle-light m-0">
                   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
                 </div>
-                <h3 class="fs-5 text-darkgreen mt-3 fw-bold hover-gold">MA 成長社群</h3>
-                <p class="text-muted small">同梯夥伴、內部分享、交流資源。</p>
+                <h3 class="fs-5 text-white mt-3 fw-bold hover-gold">MA 成長社群</h3>
+                <p class="text-white small">同梯夥伴、內部分享、交流資源。</p>
             </div>
         </div>
     </div>
@@ -1681,33 +1686,33 @@
       </div>
 
       <div class="row gap-3 justify-content-center mt-3">
-          <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
+          <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#719c71">
               <div class="icon-circle icon-circle-light m-0">
                   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
               </div>
-              <h3 class="fs-5 text-darkgreen mt-3 fw-bold hover-gold">起薪優渥</h3>
-              <p class="text-muted small">具競爭力的薪酬與績效獎金。</p>
+              <h3 class="fs-5 text-white mt-3 fw-bold hover-gold">起薪優渥</h3>
+              <p class="text-white small">具競爭力的薪酬與績效獎金。</p>
           </div>
-          <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
+          <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#719c71">
               <div class="icon-circle icon-circle-light m-0">
                   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
               </div>
-              <h3 class="fs-5 text-darkgreen mt-3 fw-bold hover-gold">健康＆保障</h3>
-              <p class="text-muted small">完整保險、定期健檢,安心工作無後顧之憂。</p>
+              <h3 class="fs-5 text-white mt-3 fw-bold hover-gold">健康＆保障</h3>
+              <p class="text-white small">完整保險、定期健檢,安心工作無後顧之憂。</p>
           </div>
-          <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
+          <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#719c71">
               <div class="icon-circle icon-circle-light m-0">
                   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gift text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><rect x="3" y="8" width="18" height="4" rx="1"></rect><path d="M12 8v13"></path><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path></svg>
               </div>
-              <h3 class="fs-5 text-darkgreen mt-3 fw-bold hover-gold">休假與生活</h3>
-              <p class="text-muted small">旅遊補助、生日／節慶禮金,享受工作與生活平衡。</p>
+              <h3 class="fs-5 text-white mt-3 fw-bold hover-gold">休假與生活</h3>
+              <p class="text-white small">旅遊補助、生日／節慶禮金,享受工作與生活平衡。</p>
           </div>
-          <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#F9FAF9">
+          <div class="col-lg-5 col-10 p-3 card-hover-effect shadow-sm rounded-3" style="background-color:#719c71">
               <div class="icon-circle icon-circle-light m-0">
                   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up text-[#0F3F2F] group-hover:text-[#B49D60] transition-colors"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
               </div>
-              <h3 class="fs-5 text-darkgreen mt-3 fw-bold hover-gold">穩健成長</h3>
-              <p class="text-muted small">員工持股信託、內部晉升制度,累積你的職涯資產。</p>
+              <h3 class="fs-5 text-white mt-3 fw-bold hover-gold">穩健成長</h3>
+              <p class="text-white small">員工持股信託、內部晉升制度,累積你的職涯資產。</p>
           </div>
       </div>
   </div>
@@ -1717,7 +1722,7 @@
  <section class="mt-5">
   <div class="container">
       <!-- 原本的區塊,位置不變 -->
-      <div class="container-custom text-center rounded-5 py-5 shadow-sm mx-auto position-relative" style="background-color:#F2F7F5;max-width:1100px; overflow: visible;">
+      <div class="container-custom text-center rounded-5 py-5 shadow-sm mx-auto position-relative" style="background-color:#d1e2db;max-width:1100px; overflow: visible;">
           <h3>準備好加速你的職涯了嗎?</h3>
           <p>成為第一銀行 MA 培訓生,下一位領導新時代的你。</p>
           <div class="d-flex justify-content-center mt-4">
@@ -1987,7 +1992,7 @@
         
         <div class="container mt-6" style="background-color:#F3F8F6">
           <div class="row justify-content-center">
-            <div class="col-lg-10 col-10 p-5 rounded-4" style="background-color:#e8f1ef">
+            <div class="col-lg-10 col-10 p-5 rounded-4" style="background-color:#9fc5bd">
               <h3 class="text-center">想更了解第一銀行 MA 職缺？</h3>
               <p class="text-center mb-4">加入我們，踏上你的職涯第一站，成為新世代的金融領袖！</p>
               <div class="d-flex justify-content-center">
