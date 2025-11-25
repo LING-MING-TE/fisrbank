@@ -12663,6 +12663,49 @@ textarea.form-control-lg {
     width: 80%;
   }
 }
+/* 進階液態玻璃效果 */
+.glass-card {
+  /* 半透明背景 */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)) !important;
+  /* 毛玻璃模糊效果 */
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  /* 邊框 */
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  /* 陰影 */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15), inset 0 1px 0 0 rgba(255, 255, 255, 0.5) !important;
+  /* 過渡效果 */
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  /* 防止背景穿透 */
+  position: relative;
+  overflow: hidden;
+}
+
+/* 添加光澤效果 */
+.glass-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.glass-card:hover::before {
+  left: 100%;
+}
+
+/* hover 效果 */
+.glass-card:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6)) !important;
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px 0 rgba(31, 38, 135, 0.25), inset 0 1px 0 0 rgba(255, 255, 255, 0.6) !important;
+}
+
 section, [id] {
   scroll-margin-top: 80px; /* 導覽列高度 + 一些額外空間 */
 }
@@ -12886,18 +12929,12 @@ section, [id] {
 /* 桌面版預設尺寸 */
 .illustration4-img {
   max-width: 280px;
-}
-
-.step1-decoration-img img {
-  max-width: 220px;
+  transform: translate(50%, -50%);
+  transition: transform 0.1s ease-out;
 }
 
 .benefit-decoration-img img {
   max-width: 200px;
-}
-
-.map-corner-img {
-  max-width: 150px;
 }
 
 /* 位置與變形 */
@@ -12910,13 +12947,8 @@ section, [id] {
   right: 0;
   transform: translate(-70%, -50%);
   z-index: 10;
-}
-
-.step1-decoration-img {
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  z-index: 10;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
 }
 
 /* 平板 (Bootstrap 的 md 斷點: 768px ~ 1199px) */
@@ -12928,28 +12960,17 @@ section, [id] {
     max-width: 150px;
     transform: translate(30%, -10%);
   }
-  .step1-decoration-img img {
-    max-width: 140px;
-  }
-  .map-corner-img {
-    max-width: 130px;
-  }
 }
 /* 手機 (小於 768px) */
 @media (max-width: 767px) {
   .illustration4-img {
     max-width: 150px;
+    transform: translate(30%, -60%);
   }
   .benefit-decoration-img {
     transform: translate(-20%, -40%);
   }
   .benefit-decoration-img img {
     max-width: 120px;
-  }
-  .map-corner-img {
-    max-width: 120px;
-  }
-  .step1-decoration-img img {
-    max-width: 110px;
   }
 }/*# sourceMappingURL=all.css.map */
