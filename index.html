@@ -2583,6 +2583,38 @@ window.addEventListener('scroll', function() {
     }
 });
 
+// 滾動觸發動畫 - 簡化版
+function setupScrollAnimation() {
+  // 1. 抓出主角和舞台
+  const stage = document.querySelector('.container-custom'); // 你的 CTA 區塊
+  const illustration = document.querySelector('.orbit-container');  // 你的飛行圖片
+  
+  if (!stage || !illustration) return;
+  
+  // 2. 設定導演 (Observer)
+  const director = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      
+      // 如果舞台出現在畫面中了 (isIntersecting)
+      if (entry.isIntersecting) {
+        illustration.classList.add('start-flying'); // 貼上標籤,開始飛!
+      } 
+      // 如果舞台離開畫面了
+      else {
+        illustration.classList.remove('start-flying'); // 撕掉標籤,重置!
+      }
+      
+    });
+  }, {
+    threshold: 0.3  // 當區塊有 30% 進入視窗時就觸發
+  });
+  
+  // 3. 叫導演開始盯場
+  director.observe(stage);
+}
+
+// 頁面載入完成後執行
+document.addEventListener('DOMContentLoaded', setupScrollAnimation);
   // 複製連結功能
   document.querySelectorAll('.copy-btn').forEach(button => {
       button.addEventListener('click', function() {

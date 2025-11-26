@@ -411,205 +411,87 @@ section, [id] {
       max-width: 120px;
   }
 }
-/* 飛行動畫 - 從左後方飛到前方再飛到右後方 */
+/* 🚀 修正後的流暢版本 */
 @keyframes illustration-fly {
-  /* 0%: 起點 (左後方，小小的，在區塊後面) */
+  /* 0% 起點：畫面左外側，較遠較小 */
   0% {
-    top: 50%;
-    left: -100px;
-    transform: translate(-50%, -50%) scale(0.5);
     opacity: 0;
-    z-index: 1;  /* 在區塊後面 */
-  }
-  
-  /* 10%: 開始出現 */
-  10% {
-    top: 50%;
-    left: 10%;
-    transform: translate(-50%, -50%) scale(0.7);
-    opacity: 0.5;
+    /* X軸: -120% (從左邊外面進來) 
+       Y軸: -50% (垂直置中)
+       scale: 0.5 (遠處小獅子)
+    */
+    transform: translate3d(-120%, -50%, 0) scale(0.5);
     z-index: 1;
   }
-  
-  /* 30%: 逐漸靠近 */
-  30% {
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%) scale(0.9);
-    opacity: 0.8;
-    z-index: 5;
-  }
-  
-  /* 50%: 中點 (正前方中央，變超大，蓋住文字和按鈕) */
-  50% {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.5);  /* 放大到 1.5 倍 */
+
+  /* 20% 進場：稍微顯現，優化視覺銜接 */
+  20% {
     opacity: 1;
-    z-index: 100;  /* 最高層級，蓋住所有內容 */
   }
-  
-  /* 70%: 開始飛離 */
-  70% {
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%) scale(0.9);
-    opacity: 0.8;
-    z-index: 5;
+
+  /* 50% 中點：正中間，最近最大 (High Point) */
+  50% {
+    opacity: 1;
+    /* X軸: -50% (正中間)
+       Y軸: -30% (稍微往下沉一點點，製造弧形軌跡，原本是-50%)
+       scale: 1.5 (近處大獅子)
+    */
+    transform: translate3d(-50%, -30%, 0) scale(1.5);
+    z-index: 100; /* 確保蓋在所有文字上面 */
   }
-  
-  /* 90%: 飛向右後方 */
-  90% {
-    top: 50%;
-    left: 90%;
-    transform: translate(-50%, -50%) scale(0.7);
-    opacity: 0.5;
-    z-index: 1;
+
+  /* 80% 離場：準備消失 */
+  80% {
+    opacity: 1;
   }
-  
-  /* 100%: 終點 (右後方，小小的，消失) */
+
+  /* 100% 終點：畫面右外側，變遠變小 */
   100% {
-    top: 50%;
-    left: calc(100% + 100px);
-    transform: translate(-50%, -50%) scale(0.5);
     opacity: 0;
-    z-index: 1;  /* 回到底層 */
+    /* X軸: 50% (正中間) + 70vw (往右飛出視窗) 
+       這裡用 calc 確保飛得夠遠
+    */
+    transform: translate3d(calc(-50% + 100vw), -50%, 0) scale(0.5);
+    z-index: 1;
   }
 }
 
-/* 圖片容器的初始狀態 */
+/* 圖片容器設定 */
 .orbit-container {
   position: absolute;
-  opacity: 0;  /* 預設隱藏 */
-  pointer-events: none;
-  animation: illustration-fly 6s ease-in-out forwards;  /* 自動開始播放 */
+  top: 50%;
+  left: 50%; /* 定位基準點設在正中間 */
+  width: 100%; /* 確保容器寬度足夠 */
+  height: 100px; /* 給予高度避免塌陷 */
+  pointer-events: none; /* 讓滑鼠點不到，才不會擋到按鈕 */
+  opacity: 0; /* 預設隱藏 */
+  
+  /* 確保元素不會超出視窗產生卷軸 */
+  will-change: transform; /* 告訴瀏覽器這個會動，預先準備效能 */
+}
+
+/* 當加上 start-flying class 時才開始動畫 */
+.orbit-container.start-flying {
+  /* linear 讓水平移動是等速的，或者用 ease-in-out 讓它中間慢兩邊快 */
+  animation: illustration-fly 4s ease-in-out forwards;
 }
 
 .illustration4-img {
   width: 180px;
   height: auto;
   display: block;
+  /* 圖片本身置中 */
+  margin: 0 auto; 
 }
 
-/* 如果想要手動觸發動畫，可以用這個 */
-.orbit-container.start-flying {
-  animation: illustration-fly 6s ease-in-out forwards;
-}
-
-/* 平板 */
-@media (max-width: 1199px) {
-  @keyframes illustration-fly {
-    0% {
-      top: 50%;
-      left: -80px;
-      transform: translate(-50%, -50%) scale(0.5);
-      opacity: 0;
-      z-index: 1;
-    }
-    10% {
-      top: 50%;
-      left: 10%;
-      transform: translate(-50%, -50%) scale(0.6);
-      opacity: 0.5;
-      z-index: 1;
-    }
-    30% {
-      top: 50%;
-      left: 35%;
-      transform: translate(-50%, -50%) scale(0.85);
-      opacity: 0.8;
-      z-index: 5;
-    }
-    50% {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1.3);
-      opacity: 1;
-      z-index: 100;
-    }
-    70% {
-      top: 50%;
-      left: 65%;
-      transform: translate(-50%, -50%) scale(0.85);
-      opacity: 0.8;
-      z-index: 5;
-    }
-    90% {
-      top: 50%;
-      left: 90%;
-      transform: translate(-50%, -50%) scale(0.6);
-      opacity: 0.5;
-      z-index: 1;
-    }
-    100% {
-      top: 50%;
-      left: calc(100% + 80px);
-      transform: translate(-50%, -50%) scale(0.5);
-      opacity: 0;
-      z-index: 1;
-    }
-  }
-  
-  .illustration4-img {
-    width: 150px;
-  }
-}
-
-/* 手機版 */
+/* RWD 調整 */
 @media (max-width: 767px) {
-  @keyframes illustration-fly {
-    0% {
-      top: 50%;
-      left: -60px;
-      transform: translate(-50%, -50%) scale(0.4);
-      opacity: 0;
-      z-index: 1;
-    }
-    10% {
-      top: 50%;
-      left: 10%;
-      transform: translate(-50%, -50%) scale(0.5);
-      opacity: 0.5;
-      z-index: 1;
-    }
-    30% {
-      top: 50%;
-      left: 35%;
-      transform: translate(-50%, -50%) scale(0.75);
-      opacity: 0.8;
-      z-index: 5;
-    }
-    50% {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1.2);
-      opacity: 1;
-      z-index: 100;
-    }
-    70% {
-      top: 50%;
-      left: 65%;
-      transform: translate(-50%, -50%) scale(0.75);
-      opacity: 0.8;
-      z-index: 5;
-    }
-    90% {
-      top: 50%;
-      left: 90%;
-      transform: translate(-50%, -50%) scale(0.5);
-      opacity: 0.5;
-      z-index: 1;
-    }
-    100% {
-      top: 50%;
-      left: calc(100% + 60px);
-      transform: translate(-50%, -50%) scale(0.4);
-      opacity: 0;
-      z-index: 1;
-    }
+  .illustration4-img {
+    width: 100px; /* 手機版獅子縮小 */
   }
   
-  .illustration4-img {
-    width: 100px;
+  /* 手機版可以飛快一點 */
+  .orbit-container.start-flying {
+    animation-duration: 3s;
   }
 }
