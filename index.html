@@ -2588,13 +2588,11 @@ window.addEventListener('scroll', function() {
         const windowHeight = window.innerHeight;
         
         if (benefitPosition < windowHeight && benefitPosition > -benefitParallax.offsetHeight) {
-            // 改用更小的數值 0.05,讓移動更細微
             const offset = (windowHeight - benefitPosition) * 0.05;
             
-            // 根據不同螢幕尺寸設定
             if (window.innerWidth <= 767) {
-                // 手機版:保持原本位置 + 細微偏移
-                benefitParallax.style.transform = `translate(-20%, calc(-40% + ${offset}px))`;
+                // 手機版:調整基礎位置,讓圖片往下且不要太靠右
+                benefitParallax.style.transform = `translate(-50%, calc(0% + ${offset}px))`;
             } else if (window.innerWidth <= 1199) {
                 // 平板版
                 benefitParallax.style.transform = `translate(-70%, calc(-50% + ${offset}px))`;
