@@ -2568,20 +2568,20 @@ window.addEventListener('scroll', function() {
         const windowHeight = window.innerHeight;
         
         if (imgPosition < windowHeight && imgPosition > -parallaxImg.offsetHeight) {
-            const offset = (windowHeight - imgPosition) * 0.3;
+            // 手機版用更小的數值
+            const multiplier = window.innerWidth <= 767 ? 0.05 : 0.3;
+            const offset = (windowHeight - imgPosition) * multiplier;
             
             if (window.innerWidth <= 767) {
-                // 手機版:往左、往下,配合 CSS 設定
                 parallaxImg.style.transform = `translate(-20%, calc(20% + ${offset}px))`;
             } else {
-                // 桌面版
                 parallaxImg.style.transform = `translate(50%, calc(-50% + ${offset}px))`;
             }
         }
     }
 });
 
-// 滾動視差效果 - illustration.png (福利區塊) - 更細微的效果
+// 滾動視差效果 - illustration.png (福利區塊) - 手機版更細微
 window.addEventListener('scroll', function() {
     const benefitParallax = document.getElementById('benefitParallax');
     
@@ -2590,16 +2590,15 @@ window.addEventListener('scroll', function() {
         const windowHeight = window.innerHeight;
         
         if (benefitPosition < windowHeight && benefitPosition > -benefitParallax.offsetHeight) {
-            const offset = (windowHeight - benefitPosition) * 0.05;
+            // 手機版用更小的數值 0.02,其他維持 0.05
+            const multiplier = window.innerWidth <= 767 ? 0.02 : 0.05;
+            const offset = (windowHeight - benefitPosition) * multiplier;
             
             if (window.innerWidth <= 767) {
-                // 手機版:調整基礎位置,讓圖片往下且不要太靠右
-                benefitParallax.style.transform = `translate(-50%, calc(0% + ${offset}px))`;
+                benefitParallax.style.transform = `translate(-50%, calc(100px + ${offset}px))`;
             } else if (window.innerWidth <= 1199) {
-                // 平板版
                 benefitParallax.style.transform = `translate(-70%, calc(-50% + ${offset}px))`;
             } else {
-                // 桌面版
                 benefitParallax.style.transform = `translate(-70%, calc(-50% + ${offset}px))`;
             }
         }
