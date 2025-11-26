@@ -2571,8 +2571,10 @@ window.addEventListener('scroll', function() {
             const offset = (windowHeight - imgPosition) * 0.3;
             
             if (window.innerWidth <= 767) {
-                parallaxImg.style.transform = `translate(40%, calc(-40% + ${offset}px))`;
+                // 手機版:往左、往下,配合 CSS 設定
+                parallaxImg.style.transform = `translate(-20%, calc(20% + ${offset}px))`;
             } else {
+                // 桌面版
                 parallaxImg.style.transform = `translate(50%, calc(-50% + ${offset}px))`;
             }
         }
