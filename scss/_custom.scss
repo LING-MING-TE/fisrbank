@@ -411,115 +411,205 @@ section, [id] {
       max-width: 120px;
   }
 }
-/* 順時針繞著區塊邊緣的動畫 - 只播放一次 */
-@keyframes orbitAround {
+/* 飛行動畫 - 從左後方飛到前方再飛到右後方 */
+@keyframes illustration-fly {
+  /* 0%: 起點 (左後方，小小的，在區塊後面) */
   0% {
-    top: -30px;
-    right: -30px;
-    opacity: 1;
-  }
-  
-  /* 右上角停留 */
-  5% {
-    top: -30px;
-    right: -30px;
-    opacity: 1;
-  }
-  
-  /* 右上角 → 右下角 */
-  30% {
-    top: calc(100% - 30px);
-    right: -30px;
-    opacity: 1;
-  }
-  
-  /* 右下角 → 左下角 */
-  55% {
-    top: calc(100% - 30px);
-    right: calc(100% - 30px);
-    opacity: 1;
-  }
-  
-  /* 左下角 → 左上角 */
-  80% {
-    top: -30px;
-    right: calc(100% - 30px);
-    opacity: 1;
-  }
-  
-  /* 左上角 → 回到右上角並淡出 */
-  95% {
-    top: -30px;
-    right: -30px;
-    opacity: 0.3;
-  }
-  
-  100% {
-    top: -30px;
-    right: -30px;
+    top: 50%;
+    left: -100px;
+    transform: translate(-50%, -50%) scale(0.5);
     opacity: 0;
+    z-index: 1;  /* 在區塊後面 */
+  }
+  
+  /* 10%: 開始出現 */
+  10% {
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%) scale(0.7);
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  /* 30%: 逐漸靠近 */
+  30% {
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0.8;
+    z-index: 5;
+  }
+  
+  /* 50%: 中點 (正前方中央，變超大，蓋住文字和按鈕) */
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);  /* 放大到 1.5 倍 */
+    opacity: 1;
+    z-index: 100;  /* 最高層級，蓋住所有內容 */
+  }
+  
+  /* 70%: 開始飛離 */
+  70% {
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0.8;
+    z-index: 5;
+  }
+  
+  /* 90%: 飛向右後方 */
+  90% {
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%) scale(0.7);
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  /* 100%: 終點 (右後方，小小的，消失) */
+  100% {
+    top: 50%;
+    left: calc(100% + 100px);
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    z-index: 1;  /* 回到底層 */
   }
 }
 
+/* 圖片容器的初始狀態 */
 .orbit-container {
   position: absolute;
-  z-index: 10;
-  animation: orbitAround 8s ease-in-out forwards; /* forwards = 播放完停在最後一幀 */
+  opacity: 0;  /* 預設隱藏 */
   pointer-events: none;
+  animation: illustration-fly 6s ease-in-out forwards;  /* 自動開始播放 */
 }
 
 .illustration4-img {
-  max-width: 180px;
   width: 180px;
   height: auto;
+  display: block;
+}
+
+/* 如果想要手動觸發動畫，可以用這個 */
+.orbit-container.start-flying {
+  animation: illustration-fly 6s ease-in-out forwards;
+}
+
+/* 平板 */
+@media (max-width: 1199px) {
+  @keyframes illustration-fly {
+    0% {
+      top: 50%;
+      left: -80px;
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0;
+      z-index: 1;
+    }
+    10% {
+      top: 50%;
+      left: 10%;
+      transform: translate(-50%, -50%) scale(0.6);
+      opacity: 0.5;
+      z-index: 1;
+    }
+    30% {
+      top: 50%;
+      left: 35%;
+      transform: translate(-50%, -50%) scale(0.85);
+      opacity: 0.8;
+      z-index: 5;
+    }
+    50% {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1.3);
+      opacity: 1;
+      z-index: 100;
+    }
+    70% {
+      top: 50%;
+      left: 65%;
+      transform: translate(-50%, -50%) scale(0.85);
+      opacity: 0.8;
+      z-index: 5;
+    }
+    90% {
+      top: 50%;
+      left: 90%;
+      transform: translate(-50%, -50%) scale(0.6);
+      opacity: 0.5;
+      z-index: 1;
+    }
+    100% {
+      top: 50%;
+      left: calc(100% + 80px);
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0;
+      z-index: 1;
+    }
+  }
+  
+  .illustration4-img {
+    width: 150px;
+  }
 }
 
 /* 手機版 */
 @media (max-width: 767px) {
-  @keyframes orbitAround {
+  @keyframes illustration-fly {
     0% {
-      top: -20px;
-      right: -20px;
-      opacity: 1;
+      top: 50%;
+      left: -60px;
+      transform: translate(-50%, -50%) scale(0.4);
+      opacity: 0;
+      z-index: 1;
     }
-    5% {
-      top: -20px;
-      right: -20px;
-      opacity: 1;
+    10% {
+      top: 50%;
+      left: 10%;
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0.5;
+      z-index: 1;
     }
     30% {
-      top: calc(100% - 20px);
-      right: -20px;
-      opacity: 1;
+      top: 50%;
+      left: 35%;
+      transform: translate(-50%, -50%) scale(0.75);
+      opacity: 0.8;
+      z-index: 5;
     }
-    55% {
-      top: calc(100% - 20px);
-      right: calc(100% - 20px);
+    50% {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1.2);
       opacity: 1;
+      z-index: 100;
     }
-    80% {
-      top: -20px;
-      right: calc(100% - 20px);
-      opacity: 1;
+    70% {
+      top: 50%;
+      left: 65%;
+      transform: translate(-50%, -50%) scale(0.75);
+      opacity: 0.8;
+      z-index: 5;
     }
-    95% {
-      top: -20px;
-      right: -20px;
-      opacity: 0.3;
+    90% {
+      top: 50%;
+      left: 90%;
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0.5;
+      z-index: 1;
     }
     100% {
-      top: -20px;
-      right: -20px;
+      top: 50%;
+      left: calc(100% + 60px);
+      transform: translate(-50%, -50%) scale(0.4);
       opacity: 0;
+      z-index: 1;
     }
-  }
-  
-  .orbit-container {
-    animation: orbitAround 10s ease-in-out forwards;
   }
   
   .illustration4-img {
-    max-width: 120px;
-    width: 120px;
+    width: 100px;
   }
 }
