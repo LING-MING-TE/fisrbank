@@ -400,11 +400,11 @@ section, [id] {
 @media (max-width: 767px) {
   .illustration4-img {
       max-width: 150px;
-      transform: translate(50%, 70%);
+      transform: translate(50%, -70%);
   }
 
   .benefit-decoration-img {
-      transform: translate(-50%, 100px) !important; 
+      transform: translate(-50%, 50px) !important; 
   }
 
   .benefit-decoration-img img {
