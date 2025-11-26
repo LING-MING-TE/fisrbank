@@ -1722,7 +1722,7 @@
           </div>
           
           <!-- 右上角圖片 -->
-          <div class="position-absolute" style="top: 0; right: 0; z-index: 10;" id="parallaxImg">
+          <div class="orbit-container" id="parallaxImg">
               <img src="image/illustration4.png" alt="插圖" class="img-fluid illustration4-img">
           </div>
       </div>
@@ -2558,28 +2558,6 @@
 
 
 <script>
-// 滾動視差效果 - illustration4.png
-window.addEventListener('scroll', function() {
-    const parallaxImg = document.getElementById('parallaxImg');
-    
-    if (parallaxImg) {
-        const scrolled = window.pageYOffset;
-        const imgPosition = parallaxImg.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-        
-        if (imgPosition < windowHeight && imgPosition > -parallaxImg.offsetHeight) {
-            // 手機版用更小的數值
-            const multiplier = window.innerWidth <= 767 ? 0.05 : 0.3;
-            const offset = (windowHeight - imgPosition) * multiplier;
-            
-            if (window.innerWidth <= 767) {
-                parallaxImg.style.transform = `translate(-20%, calc(20% + ${offset}px))`;
-            } else {
-                parallaxImg.style.transform = `translate(50%, calc(-50% + ${offset}px))`;
-            }
-        }
-    }
-});
 
 // 滾動視差效果 - illustration.png (福利區塊) - 手機版更細微
 window.addEventListener('scroll', function() {

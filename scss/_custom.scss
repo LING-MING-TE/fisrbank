@@ -410,5 +410,116 @@ section, [id] {
   .benefit-decoration-img img {
       max-width: 120px;
   }
+}
+/* 順時針繞著區塊邊緣的動畫 - 只播放一次 */
+@keyframes orbitAround {
+  0% {
+    top: -30px;
+    right: -30px;
+    opacity: 1;
+  }
+  
+  /* 右上角停留 */
+  5% {
+    top: -30px;
+    right: -30px;
+    opacity: 1;
+  }
+  
+  /* 右上角 → 右下角 */
+  30% {
+    top: calc(100% - 30px);
+    right: -30px;
+    opacity: 1;
+  }
+  
+  /* 右下角 → 左下角 */
+  55% {
+    top: calc(100% - 30px);
+    right: calc(100% - 30px);
+    opacity: 1;
+  }
+  
+  /* 左下角 → 左上角 */
+  80% {
+    top: -30px;
+    right: calc(100% - 30px);
+    opacity: 1;
+  }
+  
+  /* 左上角 → 回到右上角並淡出 */
+  95% {
+    top: -30px;
+    right: -30px;
+    opacity: 0.3;
+  }
+  
+  100% {
+    top: -30px;
+    right: -30px;
+    opacity: 0;
+  }
+}
 
+.orbit-container {
+  position: absolute;
+  z-index: 10;
+  animation: orbitAround 8s ease-in-out forwards; /* forwards = 播放完停在最後一幀 */
+  pointer-events: none;
+}
+
+.illustration4-img {
+  max-width: 180px;
+  width: 180px;
+  height: auto;
+}
+
+/* 手機版 */
+@media (max-width: 767px) {
+  @keyframes orbitAround {
+    0% {
+      top: -20px;
+      right: -20px;
+      opacity: 1;
+    }
+    5% {
+      top: -20px;
+      right: -20px;
+      opacity: 1;
+    }
+    30% {
+      top: calc(100% - 20px);
+      right: -20px;
+      opacity: 1;
+    }
+    55% {
+      top: calc(100% - 20px);
+      right: calc(100% - 20px);
+      opacity: 1;
+    }
+    80% {
+      top: -20px;
+      right: calc(100% - 20px);
+      opacity: 1;
+    }
+    95% {
+      top: -20px;
+      right: -20px;
+      opacity: 0.3;
+    }
+    100% {
+      top: -20px;
+      right: -20px;
+      opacity: 0;
+    }
+  }
+  
+  .orbit-container {
+    animation: orbitAround 10s ease-in-out forwards;
+  }
+  
+  .illustration4-img {
+    max-width: 120px;
+    width: 120px;
+  }
 }
